@@ -1,283 +1,547 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Farhat Rekaya - Technical Consultant specialized in FinTech Systems and High-Availability Infrastructure" />
-        <meta name="author" content="Farhat Rekaya" />
-        <title>Farhat Rekaya | Technical Consultant - FinTech & Infrastructure</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <link href="css/styles.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-    </head>
-    <body id="page-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Farhat Rekaya</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.png" alt="Farhat Rekaya" /></span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Farhat Rekaya - Technical Consultant specialized in FinTech Systems and High-Availability Infrastructure">
+    <title>Farhat Rekaya | Technical Consultant - FinTech & Infrastructure</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <canvas id="particles"></canvas>
+    
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-text">FR</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Technical Stack</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                </ul>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link active">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
-        </nav>
-        <div class="container-fluid p-0">
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Farhat
-                        <span class="text-primary">Rekaya</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        Technical Consultant | FinTech Systems & High-Availability Infrastructure
-                        <br />
-                        <a href="mailto:farhatrekaya2007@gmail.com">farhatrekaya2007@gmail.com</a>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span class="status-dot"></span>
+                    Available for Projects
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Farhat Rekaya</span>
+                </h1>
+                <h2 class="hero-subtitle">Technical Consultant</h2>
+                <p class="hero-description">
+                    Specialized in <strong>FinTech Systems</strong> and <strong>High-Availability Infrastructure</strong>. 
+                    With 2+ years of hands-on experience in Oracle database systems, backend infrastructure, 
+                    DevOps automation, and financial data architecture.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Get In Touch
+                    </a>
+                    <a href="#experience" class="btn btn-secondary">
+                        <i class="fas fa-briefcase"></i> View Work
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Years Experience</span>
                     </div>
-                    <p class="lead mb-5">
-                        Technical Consultant with 2+ years of hands-on experience in FinTech environments. 
-                        I specialize in Oracle database systems, backend infrastructure, DevOps automation, 
-                        API integration, and financial data architecture. My work focuses on building 
-                        robust, scalable systems that power critical financial operations with high 
-                        availability and security at the core.
-                    </p>
-                    <p class="mb-5">
-                        From optimizing database performance to architecting CI/CD pipelines, I bridge 
-                        the gap between complex technical requirements and business-critical outcomes. 
-                        I thrive in environments where reliability, performance, and security are non-negotiable.
-                    </p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/farhatrekaya/"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/FARHATREKAYA"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="mailto:farhatrekaya2007@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <div class="stat-item">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label">System Uptime</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">FinTech Projects</span>
                     </div>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Technical Stack</h2>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <h4 class="mb-3">Backend Development</h4>
-                            <ul class="fa-ul mb-4">
-                                <li><span class="fa-li"><i class="fas fa-code"></i></span>Python (FastAPI, Django)</li>
-                                <li><span class="fa-li"><i class="fas fa-code"></i></span>JavaScript (Next.js, Node.js)</li>
-                                <li><span class="fa-li"><i class="fas fa-code"></i></span>ASP.NET Core</li>
-                                <li><span class="fa-li"><i class="fas fa-code"></i></span>REST API Design & Integration</li>
-                            </ul>
-                            <h4 class="mb-3">Database Systems</h4>
-                            <ul class="fa-ul mb-4">
-                                <li><span class="fa-li"><i class="fas fa-database"></i></span>Oracle 19c / Oracle Linux</li>
-                                <li><span class="fa-li"><i class="fas fa-database"></i></span>Microsoft SQL Server</li>
-                                <li><span class="fa-li"><i class="fas fa-database"></i></span>Database Tuning & Optimization</li>
-                            </ul>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-card">
+                    <div class="profile-glow"></div>
+                    <img src="assets/img/profile.png" alt="Farhat Rekaya" class="profile-image">
+                    <div class="profile-ring"></div>
+                </div>
+                <div class="floating-icons">
+                    <div class="float-icon" style="--delay: 0s;"><i class="fab fa-docker"></i></div>
+                    <div class="float-icon" style="--delay: 1s;"><i class="fab fa-python"></i></div>
+                    <div class="float-icon" style="--delay: 2s;"><i class="fas fa-database"></i></div>
+                    <div class="float-icon" style="--delay: 3s;"><i class="fab fa-linux"></i></div>
+                    <div class="float-icon" style="--delay: 4s;"><i class="fas fa-cloud"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Technical Stack</span>
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-desc">Technologies I work with to build robust, scalable financial systems</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
                         </div>
-                        <div class="col-lg-6">
-                            <h4 class="mb-3">DevOps & Infrastructure</h4>
-                            <ul class="fa-ul mb-4">
-                                <li><span class="fa-li"><i class="fab fa-docker"></i></span>Docker & Containerization</li>
-                                <li><span class="fa-li"><i class="fas fa-infinity"></i></span>CI/CD Pipeline Automation</li>
-                                <li><span class="fa-li"><i class="fab fa-linux"></i></span>Linux (Ubuntu, Oracle Linux, RHEL)</li>
-                                <li><span class="fa-li"><i class="fas fa-shield-alt"></i></span>Security Hardening</li>
-                            </ul>
-                            <h4 class="mb-3">Data & Analytics</h4>
-                            <ul class="fa-ul mb-4">
-                                <li><span class="fa-li"><i class="fas fa-chart-bar"></i></span>Power BI</li>
-                                <li><span class="fa-li"><i class="fas fa-brain"></i></span>Machine Learning & AI</li>
-                                <li><span class="fa-li"><i class="fas fa-project-diagram"></i></span>Risk Management Systems</li>
-                            </ul>
+                        <h3>Backend Development</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python (FastAPI, Django)</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="95"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript (Next.js)</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">ASP.NET Core</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Technical Consultant</h3>
-                            <div class="subheading mb-3">Capital Banking Solutions</div>
-                            <p class="text-muted mb-3">FinTech Infrastructure & Oracle Systems</p>
-                            <ul>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Database Systems</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Oracle 19c / Oracle Linux</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Microsoft SQL Server</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Database Tuning</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>DevOps & Infrastructure</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Docker & Containerization</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="92"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CI/CD Pipelines</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Linux (Ubuntu, RHEL, Oracle)</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Data & Analytics</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Power BI</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Machine Learning & AI</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="82"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Risk Management Systems</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Career Path</span>
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-desc">My professional journey in FinTech and software engineering</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <div class="company-logo">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                                <div class="card-meta">
+                                    <h3>Technical Consultant</h3>
+                                    <span class="company">Capital Banking Solutions</span>
+                                </div>
+                                <span class="timeline-date">Jan 2025 - Present</span>
+                            </div>
+                            <div class="card-tags">
+                                <span class="tag">Oracle 19c</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">CI/CD</span>
+                                <span class="tag">Linux</span>
+                                <span class="tag">Security</span>
+                            </div>
+                            <ul class="card-details">
                                 <li>Architected and maintained Oracle Linux infrastructure for high-availability banking systems</li>
-                                <li>Performed database tuning and optimization on Oracle 19c, improving query performance by 40%</li>
-                                <li>Implemented Docker-based automation for streamlined deployment workflows</li>
-                                <li>Designed and executed CI/CD pipelines, reducing deployment time by 60%</li>
-                                <li>Led security hardening initiatives aligned with financial industry compliance standards</li>
-                                <li>Resolved critical production incidents with minimal downtime, ensuring 99.9% system availability</li>
-                                <li>Developed cloud migration strategies for legacy banking applications</li>
+                                <li>Performed database tuning on Oracle 19c, improving query performance by 40%</li>
+                                <li>Designed CI/CD pipelines, reducing deployment time by 60%</li>
+                                <li>Led security hardening initiatives aligned with financial compliance standards</li>
+                                <li>Resolved critical production incidents ensuring 99.9% system availability</li>
                             </ul>
                         </div>
-                        <div class="flex-shrink-0">
-                            <span class="text-primary">January 2025 - Present</span>
-                            <br />
-                            <span class="text-primary">Paris, France (Remote)</span>
-                        </div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Software Engineer</h3>
-                            <div class="subheading mb-3">Optimum Finance</div>
-                            <p class="text-muted mb-3">Full-Stack Development & Risk Systems</p>
-                            <ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <div class="company-logo">
+                                    <i class="fas fa-chart-pie"></i>
+                                </div>
+                                <div class="card-meta">
+                                    <h3>Software Engineer</h3>
+                                    <span class="company">Optimum Finance</span>
+                                </div>
+                                <span class="timeline-date">Jan 2024 - Jan 2025</span>
+                            </div>
+                            <div class="card-tags">
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">Next.js</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">SQL</span>
+                            </div>
+                            <ul class="card-details">
                                 <li>Engineered scalable backend services using FastAPI, serving 100K+ daily transactions</li>
                                 <li>Built responsive front-end interfaces with Next.js for financial dashboards</li>
-                                <li>Containerized applications with Docker, enabling consistent deployments across environments</li>
                                 <li>Optimized complex SQL queries, reducing database response times by 50%</li>
                                 <li>Developed risk management systems for real-time financial analysis</li>
-                                <li>Automated CI/CD workflows, accelerating release cycles by 3x</li>
                             </ul>
                         </div>
-                        <div class="flex-shrink-0">
-                            <span class="text-primary">January 2024 - January 2025</span>
-                            <br />
-                            <span class="text-primary">Tunis, Tunisia (Remote)</span>
-                        </div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Intern Developer</h3>
-                            <div class="subheading mb-3">Innofab</div>
-                            <p class="text-muted mb-3">Mobile Backend Development</p>
-                            <ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <div class="company-logo">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <div class="card-meta">
+                                    <h3>Intern Developer</h3>
+                                    <span class="company">Innofab</span>
+                                </div>
+                                <span class="timeline-date">2021</span>
+                            </div>
+                            <div class="card-tags">
+                                <span class="tag">ASP.NET</span>
+                                <span class="tag">SQL Server</span>
+                                <span class="tag">Flutter</span>
+                            </div>
+                            <ul class="card-details">
                                 <li>Developed secure backend APIs using ASP.NET for mobile applications</li>
                                 <li>Implemented SQL Server database schemas with optimized stored procedures</li>
-                                <li>Ensured data integrity and privacy through secure API design patterns</li>
+                                <li>Ensured data integrity through secure API design patterns</li>
                             </ul>
-                        </div>
-                        <div class="flex-shrink-0">
-                            <span class="text-primary">2021</span>
-                            <br />
-                            <span class="text-primary">Tunisia</span>
                         </div>
                     </div>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <section class="resume-section" id="projects">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Project Highlights</h2>
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h4 class="card-title">Banking Infrastructure Modernization</h4>
-                            <h6 class="card-subtitle mb-2 text-muted">Capital Banking Solutions</h6>
-                            <p class="card-text">Led the migration of legacy banking systems to containerized microservices architecture, improving scalability and reducing operational costs by 35%.</p>
-                            <small class="text-muted"><strong>Tech:</strong> Docker, Oracle 19c, Linux, CI/CD</small>
-                        </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-desc">Key projects showcasing my expertise in FinTech infrastructure</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-gradient"></div>
+                        <i class="fas fa-server project-icon"></i>
                     </div>
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h4 class="card-title">Real-Time Risk Management Platform</h4>
-                            <h6 class="card-subtitle mb-2 text-muted">Optimum Finance</h6>
-                            <p class="card-text">Built a full-stack risk analysis platform processing financial data in real-time, enabling proactive risk assessment and compliance reporting.</p>
-                            <small class="text-muted"><strong>Tech:</strong> FastAPI, Next.js, SQL Server, Docker</small>
+                    <div class="project-content">
+                        <span class="project-type">Infrastructure</span>
+                        <h3 class="project-title">Banking Infrastructure Modernization</h3>
+                        <p class="project-desc">Led the migration of legacy banking systems to containerized microservices architecture, improving scalability and reducing operational costs by 35%.</p>
+                        <div class="project-tech">
+                            <span>Docker</span>
+                            <span>Oracle 19c</span>
+                            <span>Linux</span>
+                            <span>CI/CD</span>
                         </div>
-                    </div>
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h4 class="card-title">AI-Powered Object Detection System</h4>
-                            <h6 class="card-subtitle mb-2 text-muted">Research Project - MSc Thesis</h6>
-                            <p class="card-text">Developed a hybrid deep learning model for real-time object detection with optimized inference performance.</p>
-                            <small class="text-muted"><strong>Tech:</strong> Python, PyTorch, Computer Vision</small>
+                        <div class="project-stats">
+                            <div class="p-stat">
+                                <span class="p-stat-value">35%</span>
+                                <span class="p-stat-label">Cost Reduction</span>
+                            </div>
+                            <div class="p-stat">
+                                <span class="p-stat-value">99.9%</span>
+                                <span class="p-stat-label">Uptime</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Monastir University</h3>
-                            <div class="subheading mb-3">M.Sc. in Artificial Intelligence</div>
-                            <ul>
-                                <li>Specialized in Machine Learning, NLP, and Decision Support Systems</li>
-                                <li>Research focus on computer vision and deep learning model optimization</li>
-                            </ul>
-                        </div>
-                        <div class="flex-shrink-0">
-                            <span class="text-primary">2021 - 2023</span>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-gradient gradient-2"></div>
+                        <i class="fas fa-shield-alt project-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-type">Full-Stack</span>
+                        <h3 class="project-title">Risk Management Platform</h3>
+                        <p class="project-desc">Built a full-stack risk analysis platform processing financial data in real-time for proactive risk assessment.</p>
+                        <div class="project-tech">
+                            <span>FastAPI</span>
+                            <span>Next.js</span>
+                            <span>SQL Server</span>
                         </div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Monastir University</h3>
-                            <div class="subheading mb-3">B.Sc. in Computer Science</div>
-                            <ul>
-                                <li>Foundations in algorithms, data structures, and software engineering</li>
-                                <li>Object-oriented programming and system design</li>
-                            </ul>
-                        </div>
-                        <div class="flex-shrink-0">
-                            <span class="text-primary">2018 - 2021</span>
-                        </div>
-                    </div>
-                    <h3 class="mb-3">Certifications</h3>
-                    <ul class="fa-ul">
-                        <li><span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>IBM Data Science Specialization (2023)</li>
-                        <li><span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>University of Michigan - Python Specialization (2022)</li>
-                        <li><span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>IBM Agile Development & Scrum (2022)</li>
-                    </ul>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <section class="resume-section" id="contact">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Get In Touch</h2>
-                    <p class="lead mb-4">
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-gradient gradient-3"></div>
+                        <i class="fas fa-brain project-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-type">AI/ML</span>
+                        <h3 class="project-title">Object Detection System</h3>
+                        <p class="project-desc">Developed a hybrid deep learning model for real-time object detection with optimized inference performance.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>PyTorch</span>
+                            <span>OpenCV</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Background</span>
+                <h2 class="section-title">Education & Certifications</h2>
+            </div>
+
+            <div class="edu-grid">
+                <div class="edu-card">
+                    <div class="edu-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="edu-content">
+                        <span class="edu-year">2021 - 2023</span>
+                        <h3>M.Sc. in Artificial Intelligence</h3>
+                        <span class="edu-school">Monastir University</span>
+                        <p>Specialized in Machine Learning, NLP, and Decision Support Systems</p>
+                    </div>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="edu-content">
+                        <span class="edu-year">2018 - 2021</span>
+                        <h3>B.Sc. in Computer Science</h3>
+                        <span class="edu-school">Monastir University</span>
+                        <p>Foundations in algorithms, data structures, and software engineering</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>IBM Data Science Specialization</span>
+                </div>
+                <div class="cert-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>Python - University of Michigan</span>
+                </div>
+                <div class="cert-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>IBM Agile Development & Scrum</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Let's Work Together</h2>
+                    <p class="contact-desc">
                         Open to consulting opportunities, collaborative projects, and roles in FinTech, 
                         DevOps, or infrastructure engineering. Let's discuss how I can contribute to your next initiative.
                     </p>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="d-flex align-items-center mb-3">
-                                <i class="fas fa-envelope fa-2x text-primary me-3"></i>
-                                <div>
-                                    <h5 class="mb-0">Email</h5>
-                                    <a href="mailto:farhatrekaya2007@gmail.com">farhatrekaya2007@gmail.com</a>
-                                </div>
+                    <div class="contact-links">
+                        <a href="mailto:farhatrekaya2007@gmail.com" class="contact-link">
+                            <div class="link-icon">
+                                <i class="fas fa-envelope"></i>
                             </div>
-                            <div class="d-flex align-items-center mb-3">
-                                <i class="fab fa-linkedin fa-2x text-primary me-3"></i>
-                                <div>
-                                    <h5 class="mb-0">LinkedIn</h5>
-                                    <a href="https://www.linkedin.com/in/farhatrekaya/" target="_blank">linkedin.com/in/farhatrekaya</a>
-                                </div>
+                            <div class="link-content">
+                                <span class="link-label">Email</span>
+                                <span class="link-value">farhatrekaya2007@gmail.com</span>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="d-flex align-items-center mb-3">
-                                <i class="fab fa-github fa-2x text-primary me-3"></i>
-                                <div>
-                                    <h5 class="mb-0">GitHub</h5>
-                                    <a href="https://github.com/FARHATREKAYA" target="_blank">github.com/FARHATREKAYA</a>
-                                </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/farhatrekaya/" target="_blank" class="contact-link">
+                            <div class="link-icon">
+                                <i class="fab fa-linkedin-in"></i>
                             </div>
-                            <div class="d-flex align-items-center mb-3">
-                                <i class="fas fa-map-marker-alt fa-2x text-primary me-3"></i>
-                                <div>
-                                    <h5 class="mb-0">Location</h5>
-                                    <span>Available Worldwide (Remote)</span>
-                                </div>
+                            <div class="link-content">
+                                <span class="link-label">LinkedIn</span>
+                                <span class="link-value">linkedin.com/in/farhatrekaya</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/FARHATREKAYA" target="_blank" class="contact-link">
+                            <div class="link-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="link-content">
+                                <span class="link-label">GitHub</span>
+                                <span class="link-value">github.com/FARHATREKAYA</span>
+                            </div>
+                        </a>
+                        <div class="contact-link">
+                            <div class="link-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="link-content">
+                                <span class="link-label">Location</span>
+                                <span class="link-value">Available Worldwide (Remote)</span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+                <div class="contact-visual">
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <span class="terminal-btn red"></span>
+                            <span class="terminal-btn yellow"></span>
+                            <span class="terminal-btn green"></span>
+                            <span class="terminal-title">contact.sh</span>
+                        </div>
+                        <div class="terminal-body">
+                            <code>
+                                <span class="prompt">$</span> <span class="command">echo</span> "Let's connect!"<br>
+                                <span class="output">Open for opportunities</span><br><br>
+                                <span class="prompt">$</span> <span class="command">mailto</span> farhatrekaya2007@gmail.com<br>
+                                <span class="output">Sending message...</span><br><br>
+                                <span class="prompt">$</span> <span class="cursor">_</span>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="js/scripts.js"></script>
-    </body>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <span class="footer-text">Designed & Built by Farhat Rekaya</span>
+                <span class="footer-year">2025</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
 </html>
