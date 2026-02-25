@@ -12,12 +12,13 @@ function initTheme() {
     const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
     // Check initial theme
-    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
-        if (themeToggleLightIcon) themeToggleLightIcon.classList.remove('hidden');
-    } else {
+    // Default to dark mode unless explicitly set to light
+    if (localStorage.getItem('color-theme') === 'light') {
         document.documentElement.classList.remove('dark');
         if (themeToggleDarkIcon) themeToggleDarkIcon.classList.remove('hidden');
+    } else {
+        document.documentElement.classList.add('dark');
+        if (themeToggleLightIcon) themeToggleLightIcon.classList.remove('hidden');
     }
 
     if (themeToggleBtn) {
