@@ -1,554 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Farhat Rekaya - Technical Consultant specialized in FinTech Systems and High-Availability Infrastructure">
+    <meta name="description"
+        content="Farhat Rekaya - Technical Consultant specialized in FinTech Systems and High-Availability Infrastructure">
     <title>Farhat Rekaya | Technical Consultant - FinTech & Infrastructure</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            900: '#134e4a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Hide scrollbar for cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #cbd5e1;
+            border-radius: 9999px;
+        }
+
+        .dark ::-webkit-scrollbar-thumb {
+            background-color: #334155;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #94a3b8;
+        }
+
+        .dark ::-webkit-scrollbar-thumb:hover {
+            background-color: #475569;
+        }
+    </style>
 </head>
-<body>
-    <canvas id="particles"></canvas>
-    
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">
-                <span class="logo-text">FR</span>
-            </a>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#about" class="nav-link active">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
+
+<body
+    class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-50 antialiased selection:bg-teal-500/30 transition-colors duration-300">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-all duration-300"
+        id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#" class="text-2xl font-bold tracking-tighter hover:opacity-80 transition-opacity">
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-blue-500">FR.</span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-sm font-medium hover:text-teal-500 transition-colors">About</a>
+                    <a href="#skills" class="text-sm font-medium hover:text-teal-500 transition-colors">Skills</a>
+                    <a href="#experience"
+                        class="text-sm font-medium hover:text-teal-500 transition-colors">Experience</a>
+                    <a href="#projects" class="text-sm font-medium hover:text-teal-500 transition-colors">Projects</a>
+                    <a href="#contact" class="text-sm font-medium hover:text-teal-500 transition-colors">Contact</a>
+
+                    <!-- Theme Toggle -->
+                    <button id="theme-toggle"
+                        class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors"
+                        aria-label="Toggle Dark Mode">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 text-slate-300" fill="currentColor"
+                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-slate-700" fill="currentColor"
+                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4.22 1.22a1 1 0 011.415 0l.884.884a1 1 0 01-1.414 1.415l-.884-.884a1 1 0 010-1.415zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM15.105 15.105a1 1 0 010 1.414l-.884.884a1 1 0 01-1.414-1.414l.884-.884a1 1 0 011.414 0zM10 16a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zm-4.22-.22a1 1 0 01-1.415 0l-.884-.884a1 1 0 011.414-1.415l.884.884a1 1 0 010 1.415zM4 10a1 1 0 01-1 1H2a1 1 0 110-2h1a1 1 0 011 1zM6.31 6.31a1 1 0 010-1.414l-.884-.884a1 1 0 01-1.414 1.414l.884.884a1 1 0 011.414 0zM10 5a5 5 0 100 10 5 5 0 000-10z">
+                            </path>
+                        </svg>
+                    </button>
+
+                    <a href="#contact"
+                        class="px-5 py-2.5 rounded-full bg-slate-900 text-white dark:bg-white dark:text-slate-900 text-sm font-medium transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">Let's
+                        Talk</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center gap-4">
+                    <button id="theme-toggle-mobile"
+                        class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors"
+                        aria-label="Toggle Dark Mode">
+                        <i class="fas fa-adjust text-slate-700 dark:text-slate-300"></i>
+                    </button>
+                    <button id="mobile-menu-btn"
+                        class="p-2 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
             </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="#about"
+                    class="mobile-link block px-3 py-3 rounded-md text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">About</a>
+                <a href="#skills"
+                    class="mobile-link block px-3 py-3 rounded-md text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Skills</a>
+                <a href="#experience"
+                    class="mobile-link block px-3 py-3 rounded-md text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Experience</a>
+                <a href="#projects"
+                    class="mobile-link block px-3 py-3 rounded-md text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Projects</a>
+                <a href="#contact"
+                    class="mobile-link block px-3 py-3 rounded-md text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800 text-teal-600 dark:text-teal-400">Let's
+                    Talk</a>
             </div>
         </div>
     </nav>
 
-    <section id="about" class="hero-section">
-        <div class="hero-content">
-            <div class="hero-text">
-                <div class="hero-badge">
-                    <span class="status-dot"></span>
-                    Available for Projects
-                </div>
-                <h1 class="hero-title">
-                    Hi, I'm <span class="gradient-text">Farhat Rekaya</span>
-                </h1>
-                <h2 class="hero-subtitle">Technical Consultant</h2>
-                <p class="hero-description">
-                    Specialized in <strong>FinTech Systems</strong> and <strong>High-Availability Infrastructure</strong>. 
-                    With 2+ years of hands-on experience in Oracle database systems, backend infrastructure, 
-                    DevOps automation, and financial data architecture.
-                </p>
-                <div class="hero-cta">
-                    <a href="#contact" class="btn btn-primary">
-                        <i class="fas fa-paper-plane"></i> Get In Touch
-                    </a>
-                    <a href="#experience" class="btn btn-secondary">
-                        <i class="fas fa-briefcase"></i> View Work
-                    </a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">2+</span>
-                        <span class="stat-label">Years Experience</span>
+    <!-- Hero Section -->
+    <section id="about" class="pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <!-- Text Content -->
+                <div class="max-w-2xl">
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal-50 dark:bg-teal-500/10 text-teal-700 dark:text-teal-400 text-sm font-medium mb-8 border border-teal-100 dark:border-teal-500/20">
+                        <span class="relative flex h-2.5 w-2.5">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-teal-500"></span>
+                        </span>
+                        Available for Projects
                     </div>
-                    <!-- <div class="stat-item">
-                        <span class="stat-number">Production</span>
-                        <span class="stat-label">Infrastructure</span>
-                    </div> -->
-                    <div class="stat-item">
-                        <span class="stat-number">3</span>
-                        <span class="stat-label">FinTech Projects</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="profile-card">
-                    <div class="profile-glow"></div>
-                    <img src="assets/img/profile.png" alt="Farhat Rekaya" class="profile-image">
-                    <div class="profile-ring"></div>
-                </div>
-                <div class="floating-icons">
-                    <div class="float-icon" style="--delay: 0s;"><i class="fab fa-docker"></i></div>
-                    <div class="float-icon" style="--delay: 1s;"><i class="fab fa-python"></i></div>
-                    <div class="float-icon" style="--delay: 2s;"><i class="fas fa-database"></i></div>
-                    <div class="float-icon" style="--delay: 3s;"><i class="fab fa-linux"></i></div>
-                    <div class="float-icon" style="--delay: 4s;"><i class="fas fa-cloud"></i></div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-            <span>Scroll Down</span>
-        </div>
-    </section>
 
-    <section id="skills" class="skills-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Technical Stack</span>
-                <h2 class="section-title">Skills & Expertise</h2>
-                <p class="section-desc">Technologies I work with to build robust, scalable financial systems</p>
-            </div>
-            
-            <div class="skills-grid">
+                    <h1
+                        class="text-5xl lg:text-7xl font-extrabold tracking-tight mb-6 text-slate-900 dark:text-white leading-[1.1]">
+                        Hi, I'm <br />
+                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-blue-500">Farhat
+                            Rekaya</span>
+                    </h1>
 
+                    <h2 class="text-2xl lg:text-3xl font-semibold text-slate-700 dark:text-slate-300 mb-6">
+                        Technical Consultant
+                    </h2>
 
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <h3>Databases</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Oracle Database 19c</span>
-                        <span class="skill-tag">Microsoft SQL Server</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">ClickHouse</span>
-                        <span class="skill-tag">SQLite</span>
-                        <span class="skill-tag">MinIO</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <h3>DevOps</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">CI/CD Pipelines</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Shell Scripting</span>
-                        <span class="skill-tag">Infrastructure Security</span>
-                        <span class="skill-tag">High-Availability Architecture</span>
-                        <span class="skill-tag">Disaster Recovery</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3>Backend</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">FastAPI</span>
-                        <span class="skill-tag">Django</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">.NET (C# / ASP.NET)</span>
-                        <span class="skill-tag">C</span>
-                        <span class="skill-tag">SQL</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <h3>Frontend</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Next.js</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h3>Data & AI</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Power BI</span>
-                        <span class="skill-tag">KNIME</span>
-                        <span class="skill-tag">Data Analysis</span>
-                        <span class="skill-tag">Business Intelligence</span>
-                        <span class="skill-tag">Machine Learning</span>
-                        <span class="skill-tag">Risk Management Systems</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-plug"></i>
-                        </div>
-                        <h3>APIs & Integration</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">RESTful APIs</span>
-                        <span class="skill-tag">Swagger</span>
-                        <span class="skill-tag">System Integration</span>
-                        <span class="skill-tag">Business Rules Implementation</span>
-                        <span class="skill-tag">Financial Flows Architecture</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-desktop"></i>
-                        </div>
-                        <h3>Operating Systems</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Oracle Linux</span>
-                        <span class="skill-tag">Ubuntu</span>
-                        <span class="skill-tag">Red Hat</span>
-                        <span class="skill-tag">Windows Server</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-users-cog"></i>
-                        </div>
-                        <h3>Methodologies & Tools</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Agile</span>
-                        <span class="skill-tag">Scrum</span>
-                        <span class="skill-tag">JIRA</span>
-                        <span class="skill-tag">ZenHub</span>
-                        <span class="skill-tag">Incident Management</span>
-                        <span class="skill-tag">Cross-functional Collaboration</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="experience-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Career Path</span>
-                <h2 class="section-title">Work Experience</h2>
-                <p class="section-desc">My professional journey in FinTech and software engineering</p>
-            </div>
-
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-card">
-                            <div class="card-header">
-                                <div class="company-logo">
-                                    <i class="fas fa-university"></i>
-                                </div>
-                                <div class="card-meta">
-                                    <h3>Technical Consultant</h3>
-                                    <span class="company">Capital Banking Solutions</span>
-                                </div>
-                                <span class="timeline-date">Jan 2025 - Present</span>
-                            </div>
-                            <div class="card-tags">
-                                <span class="tag">FinTech</span>
-                                <span class="tag">Databases</span>
-                                <span class="tag">Docker</span>
-                                <span class="tag">Middleware</span>
-                                <span class="tag">Linux</span>
-                                <span class="tag">Security</span>
-                                <span class="tag">High Availability</span>
-                                <span class="tag">Load Balancing</span>
-                            </div>
-                            <ul class="card-details">
-                                <li>Managed backend infrastructure on Oracle Linux, ensuring high availability, security, and optimal database/application performance.</li>
-                                <li>Automated deployments and environment provisioning using Docker, shell scripting, and CI/CD pipelines, reducing operational overhead and human error.</li>
-                                <li>Monitored and optimized Oracle databases and middleware, implementing performance tuning, capacity planning, and proactive issue detection.</li>
-                                <li>Secured infrastructure by configuring firewalls, managing SSL/HTTPS certificates, and applying hardening practices for network and application layers.</li>
-                                <li>Troubleshot and resolved critical production incidents across application, database, and networking layers, minimizing downtime and ensuring business continuity.</li>
-                                <li>Collaborated with cross-functional teams on system upgrades, cloud migration strategies, and infrastructure scaling, contributing to long-term architectural roadmaps.</li>
-                                <li>Drove DevOps practices across development and operations teams, standardizing release processes, automating monitoring, and ensuring disaster recovery readiness.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-card">
-                            <div class="card-header">
-                                <div class="company-logo">
-                                    <i class="fas fa-chart-pie"></i>
-                                </div>
-                                <div class="card-meta">
-                                    <h3>Software Engineer</h3>
-                                    <span class="company">Optimum Finance</span>
-                                </div>
-                                <span class="timeline-date">Jan 2024 - Jan 2025</span>
-                            </div>
-                            <div class="card-tags">
-                                <span class="tag">FastAPI</span>
-                                <span class="tag">Next.js</span>
-                                <span class="tag">Docker</span>
-                                <span class="tag">SQL</span>
-                                <span class="tag">Risk Management</span>
-                                <span class="tag">Financial Systems</span>
-                                <span class="tag">Data Analysis</span>
-                                <span class="tag">Business Intelligence</span>
-                            </div>
-                            <ul class="card-details">
-                                <li>Engineered and deployed robust, scalable banking systems.</li>
-                                <li>Developed full-stack applications using SQL, Python (FastAPI), Docker, and Next.js, enhancing user experience.</li>
-                                <li>onducted data analysis to optimize risk management strategies.</li>
-                                <li>Collaborated with cross-functional teams to deliver high-quality software.</li>
-                                <li>Implemented CI/CD pipelines and automated testing to ensure reliability.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-card">
-                            <div class="card-header">
-                                <div class="company-logo">
-                                    <i class="fas fa-mobile-alt"></i>
-                                </div>
-                                <div class="card-meta">
-                                    <h3>Intern Developer</h3>
-                                    <span class="company">Innofab</span>
-                                </div>
-                                <span class="timeline-date">2021</span>
-                            </div>
-                            <div class="card-tags">
-                                <span class="tag">ASP.NET</span>
-                                <span class="tag">SQL Server</span>
-                                <span class="tag">Flutter</span>
-                            </div>
-                            <ul class="card-details">
-                                <li>Developed MakeTrust, a mobile app for review management using Flutter, ASP.NET, and SQL Server, enhancing user engagement while ensuring data integrity and privacy with secure backend services.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Portfolio</span>
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-desc">Key projects showcasing my expertise in FinTech infrastructure</p>
-            </div>
-
-            <div class="projects-grid">
-                <div class="project-card featured">
-                    <div class="project-image">
-                        <div class="project-gradient"></div>
-                        <i class="fas fa-server project-icon"></i>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-type">Infrastructure</span>
-                        <h3 class="project-title">Banking Infrastructure Modernization</h3>
-                        <p class="project-desc">Led the migration of legacy banking systems to a containerized microservices architecture, improving scalability, reliability, and deployment efficiency.
-Implemented Docker-based CI/CD pipelines and optimized Oracle 19c on Linux environments.</p>
-                        <div class="project-tech">
-                            <span>Docker</span>
-                            <span>Databases</span>
-                            <span>Linux</span>
-                            <span>CI/CD</span>
-                            <span>High Availability</span>
-                            <span>Load Balancing</span>
-                            <span>Security</span>
-                            <span></span>
-                        </div>
-                        <div class="project-stats">
-                            <div class="p-stat">
-                                <span class="p-stat-value">Enterprise</span>
-                                <span class="p-stat-label">FinTech Systems
-</span>
-                            </div>
-                            <div class="p-stat">
-                                <span class="p-stat-value">HA</span>
-                                <span class="p-stat-label">Infrastructure</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-gradient gradient-2"></div>
-                        <i class="fas fa-shield-alt project-icon"></i>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-type">Full-Stack</span>
-                        <h3 class="project-title">Risk Management Platform</h3>
-                        <p class="project-desc">Built a full-stack risk analysis platform processing financial data in real-time for proactive risk assessment.</p>
-                        <div class="project-tech">
-                            <span>FastAPI</span>
-                            <span>Next.js</span>
-                            <span>SQL Server</span>
-                            <span>Data Analysis</span>
-                            <span>Business Intelligence</span>
-                            <span>Financial Systems</span>
-                            <span>Risk Management</span>
-                            <span>ClickHouse</span>
-                            <span>MinIo</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-gradient gradient-3"></div>
-                        <i class="fas fa-brain project-icon"></i>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-type">AI/ML</span>
-                        <h3 class="project-title">Object Detection System</h3>
-                        <p class="project-desc">Developed a hybrid deep learning model for real-time object detection with optimized inference performance.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>PyTorch</span>
-                            <span>OpenCV</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="education" class="education-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Background</span>
-                <h2 class="section-title">Education & Certifications</h2>
-            </div>
-
-            <div class="edu-grid">
-                <div class="edu-card">
-                    <div class="edu-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="edu-content">
-                        <span class="edu-year">2021 - 2023</span>
-                        <h3>M.Sc. in Artificial Intelligence</h3>
-                        <span class="edu-school">Monastir University</span>
-                        <p>Specialized in Machine Learning, NLP, and Decision Support Systems</p>
-                    </div>
-                </div>
-
-                <div class="edu-card">
-                    <div class="edu-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="edu-content">
-                        <span class="edu-year">2018 - 2021</span>
-                        <h3>B.Sc. in Computer Science</h3>
-                        <span class="edu-school">Monastir University</span>
-                        <p>Foundations in algorithms, data structures, and software engineering</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cert-grid">
-                <div class="cert-item">
-                    <i class="fas fa-certificate"></i>
-                    <span>IBM Data Science Specialization</span>
-                </div>
-                <div class="cert-item">
-                    <i class="fas fa-certificate"></i>
-                    <span>Python - University of Michigan</span>
-                </div>
-                <div class="cert-item">
-                    <i class="fas fa-certificate"></i>
-                    <span>IBM Agile Development & Scrum</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <span class="section-tag">Get In Touch</span>
-                    <h2 class="section-title">Let's Work Together</h2>
-                    <p class="contact-desc">
-                        Open to consulting opportunities, collaborative projects, and roles in FinTech, 
-                        DevOps, or infrastructure engineering. Let's discuss how I can contribute to your next initiative.
+                    <p class="text-lg text-slate-600 dark:text-slate-400 mb-10 leading-relaxed max-w-xl">
+                        Specialized in <strong class="text-slate-900 dark:text-white font-semibold">FinTech
+                            Systems</strong> and <strong
+                            class="text-slate-900 dark:text-white font-semibold">High-Availability
+                            Infrastructure</strong>.
+                        With 2+ years of hands-on experience in Oracle database systems, backend infrastructure,
+                        DevOps automation, and financial data architecture.
                     </p>
-                    <div class="contact-links">
-                        <a href="mailto:farhatrekaya2007@gmail.com" class="contact-link">
-                            <div class="link-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="link-content">
-                                <span class="link-label">Email</span>
-                                <span class="link-value">farhatrekaya2007@gmail.com</span>
-                            </div>
+
+                    <div class="flex flex-wrap gap-4 mb-12">
+                        <a href="#projects"
+                            class="inline-flex items-center justify-center px-8 py-3.5 text-sm sm:text-base font-medium text-white bg-slate-900 dark:bg-white dark:text-slate-900 rounded-full transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg shadow-sm">
+                            View Projects
                         </a>
-                        <a href="https://www.linkedin.com/in/farhatrekaya/" target="_blank" class="contact-link">
-                            <div class="link-icon">
-                                <i class="fab fa-linkedin-in"></i>
-                            </div>
-                            <div class="link-content">
-                                <span class="link-label">LinkedIn</span>
-                                <span class="link-value">linkedin.com/in/farhatrekaya</span>
-                            </div>
+                        <a href="#contact"
+                            class="inline-flex items-center justify-center px-8 py-3.5 text-sm sm:text-base font-medium text-slate-900 dark:text-white bg-white dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 rounded-full transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-slate-300 dark:hover:border-slate-600 shadow-sm">
+                            Let's Talk
                         </a>
-                        <a href="https://github.com/FARHATREKAYA" target="_blank" class="contact-link">
-                            <div class="link-icon">
-                                <i class="fab fa-github"></i>
-                            </div>
-                            <div class="link-content">
-                                <span class="link-label">GitHub</span>
-                                <span class="link-value">github.com/FARHATREKAYA</span>
-                            </div>
+                        <a href="assets/farhat_rekaya_cv.pdf" target="_blank"
+                            class="inline-flex items-center justify-center px-6 py-3.5 text-sm sm:text-base font-medium text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300 transition-colors">
+                            <i class="fas fa-download mr-2"></i> Download CV
                         </a>
-                        <div class="contact-link">
-                            <div class="link-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="link-content">
-                                <span class="link-label">Location</span>
-                                <span class="link-value">Available Worldwide (Remote)</span>
-                            </div>
+                    </div>
+
+                    <div class="flex items-center gap-8 border-t border-slate-200 dark:border-slate-800 pt-8">
+                        <div>
+                            <div class="text-3xl font-bold text-slate-900 dark:text-white mb-1">2+</div>
+                            <div
+                                class="text-sm font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+                                Years Experience</div>
+                        </div>
+                        <div class="w-px h-12 bg-slate-200 dark:bg-slate-800"></div>
+                        <div>
+                            <div class="text-3xl font-bold text-slate-900 dark:text-white mb-1">3</div>
+                            <div
+                                class="text-sm font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+                                FinTech Projects</div>
                         </div>
                     </div>
                 </div>
-                <div class="contact-visual">
-                    <div class="terminal">
-                        <div class="terminal-header">
-                            <span class="terminal-btn red"></span>
-                            <span class="terminal-btn yellow"></span>
-                            <span class="terminal-btn green"></span>
-                            <span class="terminal-title">contact.sh</span>
+
+                <!-- Visual Content -->
+                <div class="relative lg:ml-auto w-full max-w-md mx-auto mt-12 lg:mt-0">
+                    <!-- Decorative background blob -->
+                    <div
+                        class="absolute -inset-4 bg-gradient-to-r from-teal-500/20 to-blue-500/20 rounded-[2rem] blur-2xl z-0 dark:opacity-50">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-tr from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-700 rounded-2xl transform rotate-3 scale-105 transition-transform duration-500 hover:rotate-6 z-0 shadow-lg">
+                    </div>
+
+                    <!-- Profile Image -->
+                    <div class="relative z-10 bg-white dark:bg-slate-800 rounded-2xl p-2 shadow-2xl">
+                        <img src="assets/img/profile.png" alt="Farhat Rekaya"
+                            class="rounded-xl w-full h-[320px] sm:h-[400px] lg:h-[480px] object-cover bg-slate-100 dark:bg-slate-700">
+
+                        <!-- Floating badges -->
+                        <div
+                            class="absolute -left-4 sm:-left-6 top-1/4 bg-white dark:bg-slate-700 p-3 sm:p-4 rounded-xl shadow-xl flex items-center gap-3 animate-[bounce_4s_infinite]">
+                            <i class="fab fa-docker text-2xl sm:text-3xl text-blue-500"></i>
                         </div>
-                        <div class="terminal-body">
-                            <code>
-                                <span class="prompt">$</span> <span class="command">echo</span> "Let's connect!"<br>
-                                <span class="output">Open for opportunities</span><br><br>
-                                <span class="prompt">$</span> <span class="command">mailto</span> farhatrekaya2007@gmail.com<br>
-                                <span class="output">Sending message...</span><br><br>
-                                <span class="prompt">$</span> <span class="cursor">_</span>
-                            </code>
+                        <div
+                            class="absolute -right-4 sm:-right-6 bottom-1/3 bg-white dark:bg-slate-700 p-3 sm:p-4 rounded-xl shadow-xl flex items-center gap-3 animate-[bounce_5s_infinite_0.5s]">
+                            <i class="fas fa-database text-2xl sm:text-3xl text-teal-500"></i>
                         </div>
                     </div>
                 </div>
@@ -556,15 +241,888 @@ Implemented Docker-based CI/CD pipelines and optimized Oracle 19c on Linux envir
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <span class="footer-text">Designed & Built by Farhat Rekaya</span>
-                <span class="footer-year">2025</span>
+    <!-- Skills Section -->
+    <section id="skills" class="bg-white dark:bg-slate-900 py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl lg:text-center mb-16">
+                <h2 class="text-base font-semibold leading-7 text-teal-600 dark:text-teal-400">Technical Stack</h2>
+                <p class="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Skills &
+                    Expertise</p>
+                <p class="mt-6 text-lg leading-8 text-slate-600 dark:text-slate-400">Technologies I work with to build
+                    robust, scalable financial systems</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Databases -->
+                <div
+                    class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-100 dark:border-slate-800 hover:border-teal-500/30 dark:hover:border-teal-500/30 transition-colors shadow-sm">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div
+                            class="flex h-12 w-12 items-center justify-center rounded-xl bg-teal-500/10 text-teal-600 dark:text-teal-400">
+                            <i class="fas fa-database text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Databases</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Oracle
+                            Database 19c</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Microsoft
+                            SQL Server</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">MySQL</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">ClickHouse</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">SQLite</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">MinIO</span>
+                    </div>
+                </div>
+
+                <!-- DevOps -->
+                <div
+                    class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-100 dark:border-slate-800 hover:border-blue-500/30 dark:hover:border-blue-500/30 transition-colors shadow-sm">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div
+                            class="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400">
+                            <i class="fas fa-server text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">DevOps</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Docker</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">CI/CD
+                            Pipelines</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Git</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Shell
+                            Scripting</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Infrastructure
+                            Security</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">High-Availability
+                            Architecture</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Disaster
+                            Recovery</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div
+                    class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-100 dark:border-slate-800 hover:border-emerald-500/30 dark:hover:border-emerald-500/30 transition-colors shadow-sm">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div
+                            class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">
+                            <i class="fas fa-code text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Backend</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Python</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">FastAPI</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Django</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Java</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">.NET
+                            (C# / ASP.NET)</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">C</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">SQL</span>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div
+                    class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-100 dark:border-slate-800 hover:border-indigo-500/30 dark:hover:border-indigo-500/30 transition-colors shadow-sm">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div
+                            class="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-500/10 text-indigo-600 dark:text-indigo-400">
+                            <i class="fas fa-laptop-code text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Frontend</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">React</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Next.js</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Tailwind
+                            CSS</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Bootstrap
+                            4</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">jQuery</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">HTML5</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">CSS3</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Data & AI -->
+                <div
+                    class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-100 dark:border-slate-800 hover:border-purple-500/30 dark:hover:border-purple-500/30 transition-colors shadow-sm">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div
+                            class="flex h-12 w-12 items-center justify-center rounded-xl bg-purple-500/10 text-purple-600 dark:text-purple-400">
+                            <i class="fas fa-chart-line text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Data & AI</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Power
+                            BI</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">KNIME</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Data
+                            Analysis</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Business
+                            Intelligence</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Machine
+                            Learning</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Risk
+                            Management Systems</span>
+                    </div>
+                </div>
+
+                <!-- APIs & Integration -->
+                <div
+                    class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-100 dark:border-slate-800 hover:border-pink-500/30 dark:hover:border-pink-500/30 transition-colors shadow-sm">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div
+                            class="flex h-12 w-12 items-center justify-center rounded-xl bg-pink-500/10 text-pink-600 dark:text-pink-400">
+                            <i class="fas fa-plug text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">APIs & Integration</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">RESTful
+                            APIs</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Swagger</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">System
+                            Integration</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Business
+                            Rules Implementation</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Financial
+                            Flows Architecture</span>
+                    </div>
+                </div>
+
+                <!-- Operating Systems -->
+                <div
+                    class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-100 dark:border-slate-800 hover:border-orange-500/30 dark:hover:border-orange-500/30 transition-colors shadow-sm">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div
+                            class="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-500/10 text-orange-600 dark:text-orange-400">
+                            <i class="fas fa-desktop text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Operating Systems</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Oracle
+                            Linux</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Ubuntu</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Red
+                            Hat</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Windows
+                            Server</span>
+                    </div>
+                </div>
+
+                <!-- Methodologies & Tools -->
+                <div
+                    class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-100 dark:border-slate-800 hover:border-rose-500/30 dark:hover:border-rose-500/30 transition-colors shadow-sm lg:col-span-2">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div
+                            class="flex h-12 w-12 items-center justify-center rounded-xl bg-rose-500/10 text-rose-600 dark:text-rose-400">
+                            <i class="fas fa-users-cog text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Methodologies & Tools</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Agile</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Scrum</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">JIRA</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">ZenHub</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Incident
+                            Management</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Cross-functional
+                            Collaboration</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="bg-slate-50 dark:bg-slate-800/50 py-24 sm:py-32 relative">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl lg:text-center mb-16">
+                <h2 class="text-base font-semibold leading-7 text-teal-600 dark:text-teal-400">Career Path</h2>
+                <p class="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Work
+                    Experience</p>
+                <p class="mt-6 text-lg leading-8 text-slate-600 dark:text-slate-400">My professional journey in FinTech
+                    and software engineering</p>
+            </div>
+
+            <div class="mx-auto max-w-4xl relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-4 top-4 bottom-4 w-px bg-slate-200 dark:bg-slate-700 md:left-1/2 md:-ml-px">
+                </div>
+
+                <div class="space-y-12">
+                    <!-- Item 1: Capital Banking Solutions -->
+                    <div class="relative flex flex-col md:flex-row md:justify-between items-start group">
+                        <!-- Timeline Dot -->
+                        <div
+                            class="absolute left-4 md:left-1/2 -ml-2.5 mt-1.5 h-5 w-5 rounded-full border-4 border-white dark:border-slate-900 bg-teal-500 shadow-sm z-10 group-hover:scale-125 transition-transform duration-300">
+                        </div>
+
+                        <!-- Left Content (Date on Desktop) -->
+                        <div class="hidden md:block w-1/2 pr-12 text-right pt-1">
+                            <span
+                                class="inline-flex items-center rounded-full bg-teal-50 dark:bg-teal-500/10 px-3 py-1 text-sm font-medium text-teal-700 dark:text-teal-400 border border-teal-100 dark:border-teal-500/20">Jan
+                                2025 - Present</span>
+                        </div>
+
+                        <!-- Right Content (Card) -->
+                        <div class="ml-12 md:ml-0 md:w-1/2 md:pl-12 w-full">
+                            <div
+                                class="bg-white dark:bg-slate-800 rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md transition-shadow">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div
+                                        class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300">
+                                        <i class="fas fa-university text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-bold text-slate-900 dark:text-white">Technical
+                                            Consultant</h3>
+                                        <p class="text-sm font-medium text-slate-600 dark:text-slate-400">Capital
+                                            Banking Solutions</p>
+                                    </div>
+                                </div>
+                                <div class="md:hidden mb-4">
+                                    <span
+                                        class="inline-flex items-center rounded-full bg-teal-50 dark:bg-teal-500/10 px-3 py-1 text-xs font-medium text-teal-700 dark:text-teal-400 border border-teal-100 dark:border-teal-500/20">Jan
+                                        2025 - Present</span>
+                                </div>
+
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">FinTech</span>
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Databases</span>
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Docker</span>
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Middleware</span>
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Linux</span>
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Security</span>
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">High
+                                        Availability</span>
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Load
+                                        Balancing</span>
+                                </div>
+
+                                <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400">
+                                    <li class="flex gap-x-3"><i
+                                            class="fas fa-check-circle text-teal-500 mt-1 shrink-0"></i> <span>Managed
+                                            backend infrastructure on Oracle Linux, ensuring high availability,
+                                            security, and optimal database/application performance.</span></li>
+                                    <li class="flex gap-x-3"><i
+                                            class="fas fa-check-circle text-teal-500 mt-1 shrink-0"></i> <span>Automated
+                                            deployments and environment provisioning using Docker, shell scripting, and
+                                            CI/CD pipelines, reducing operational overhead and human error.</span></li>
+                                    <li class="flex gap-x-3"><i
+                                            class="fas fa-check-circle text-teal-500 mt-1 shrink-0"></i> <span>Monitored
+                                            and optimized Oracle databases and middleware, implementing performance
+                                            tuning, capacity planning, and proactive issue detection.</span></li>
+                                    <li class="flex gap-x-3"><i
+                                            class="fas fa-check-circle text-teal-500 mt-1 shrink-0"></i> <span>Secured
+                                            infrastructure by configuring firewalls, managing SSL/HTTPS certificates,
+                                            and applying hardening practices for network and application layers.</span>
+                                    </li>
+                                    <li class="flex gap-x-3"><i
+                                            class="fas fa-check-circle text-teal-500 mt-1 shrink-0"></i>
+                                        <span>Troubleshot and resolved critical production incidents across application,
+                                            database, and networking layers, minimizing downtime and ensuring business
+                                            continuity.</span>
+                                    </li>
+                                    <li class="flex gap-x-3"><i
+                                            class="fas fa-check-circle text-teal-500 mt-1 shrink-0"></i>
+                                        <span>Collaborated with cross-functional teams on system upgrades, cloud
+                                            migration strategies, and infrastructure scaling, contributing to long-term
+                                            architectural roadmaps.</span>
+                                    </li>
+                                    <li class="flex gap-x-3"><i
+                                            class="fas fa-check-circle text-teal-500 mt-1 shrink-0"></i> <span>Drove
+                                            DevOps practices across development and operations teams, standardizing
+                                            release processes, automating monitoring, and ensuring disaster recovery
+                                            readiness.</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Optimum Finance -->
+                    <div class="relative flex flex-col md:flex-row-reverse md:justify-between items-start group">
+                        <div
+                            class="absolute left-4 md:left-1/2 -ml-2.5 mt-1.5 h-5 w-5 rounded-full border-4 border-white dark:border-slate-900 bg-blue-500 shadow-sm z-10 group-hover:scale-125 transition-transform duration-300">
+                        </div>
+
+                        <div class="hidden md:block w-1/2 pl-12 text-left pt-1">
+                            <span
+                                class="inline-flex items-center rounded-full bg-slate-100 dark:bg-slate-800 px-3 py-1 text-sm font-medium text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">Jan
+                                2024 - Jan 2025</span>
+                        </div>
+
+                        <div class="ml-12 md:ml-0 md:w-1/2 md:pr-12 w-full">
+                            <div
+                                class="bg-white dark:bg-slate-800 rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md transition-shadow">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div
+                                        class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300">
+                                        <i class="fas fa-chart-pie text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-bold text-slate-900 dark:text-white">Software Engineer
+                                        </h3>
+                                        <p class="text-sm font-medium text-slate-600 dark:text-slate-400">Optimum
+                                            Finance</p>
+                                    </div>
+                                </div>
+                                <div class="md:hidden mb-4">
+                                    <span
+                                        class="inline-flex items-center rounded-full bg-slate-100 dark:bg-slate-800 px-3 py-1 text-xs font-medium text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">Jan
+                                        2024 - Jan 2025</span>
+                                </div>
+
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">FastAPI</span>
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Next.js</span>
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Docker</span>
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">SQL</span>
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Risk
+                                        Management</span>
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Financial
+                                        Systems</span>
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Data
+                                        Analysis</span>
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Business
+                                        Intelligence</span>
+                                </div>
+
+                                <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400">
+                                    <li class="flex gap-x-3"><i
+                                            class="fas fa-check-circle text-blue-500 mt-1 shrink-0"></i>
+                                        <span>Engineered and deployed robust, scalable banking systems.</span>
+                                    </li>
+                                    <li class="flex gap-x-3"><i
+                                            class="fas fa-check-circle text-blue-500 mt-1 shrink-0"></i> <span>Developed
+                                            full-stack applications using SQL, Python (FastAPI), Docker, and Next.js,
+                                            enhancing user experience.</span></li>
+                                    <li class="flex gap-x-3"><i
+                                            class="fas fa-check-circle text-blue-500 mt-1 shrink-0"></i> <span>onducted
+                                            data analysis to optimize risk management strategies.</span></li>
+                                    <li class="flex gap-x-3"><i
+                                            class="fas fa-check-circle text-blue-500 mt-1 shrink-0"></i>
+                                        <span>Collaborated with cross-functional teams to deliver high-quality
+                                            software.</span>
+                                    </li>
+                                    <li class="flex gap-x-3"><i
+                                            class="fas fa-check-circle text-blue-500 mt-1 shrink-0"></i>
+                                        <span>Implemented CI/CD pipelines and automated testing to ensure
+                                            reliability.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Innofab -->
+                    <div class="relative flex flex-col md:flex-row md:justify-between items-start group">
+                        <div
+                            class="absolute left-4 md:left-1/2 -ml-2.5 mt-1.5 h-5 w-5 rounded-full border-4 border-white dark:border-slate-900 bg-slate-400 dark:bg-slate-500 shadow-sm z-10 group-hover:scale-125 transition-transform duration-300">
+                        </div>
+
+                        <div class="hidden md:block w-1/2 pr-12 text-right pt-1">
+                            <span
+                                class="inline-flex items-center rounded-full bg-slate-100 dark:bg-slate-800 px-3 py-1 text-sm font-medium text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">2021</span>
+                        </div>
+
+                        <div class="ml-12 md:ml-0 md:w-1/2 md:pl-12 w-full">
+                            <div
+                                class="bg-white dark:bg-slate-800 rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md transition-shadow">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div
+                                        class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300">
+                                        <i class="fas fa-mobile-alt text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-bold text-slate-900 dark:text-white">Intern Developer
+                                        </h3>
+                                        <p class="text-sm font-medium text-slate-600 dark:text-slate-400">Innofab</p>
+                                    </div>
+                                </div>
+                                <div class="md:hidden mb-4">
+                                    <span
+                                        class="inline-flex items-center rounded-full bg-slate-100 dark:bg-slate-800 px-3 py-1 text-xs font-medium text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">2021</span>
+                                </div>
+
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">ASP.NET</span>
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">SQL
+                                        Server</span>
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Flutter</span>
+                                </div>
+
+                                <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400">
+                                    <li class="flex gap-x-3"><i
+                                            class="fas fa-check-circle text-slate-400 dark:text-slate-500 mt-1 shrink-0"></i>
+                                        <span>Developed MakeTrust, a mobile app for review management using Flutter,
+                                            ASP.NET, and SQL Server, enhancing user engagement while ensuring data
+                                            integrity and privacy with secure backend services.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-white dark:bg-slate-900 py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl lg:text-center mb-16">
+                <span class="text-base font-semibold leading-7 text-teal-600 dark:text-teal-400">Portfolio</span>
+                <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Featured
+                    Projects</h2>
+                <p class="mt-6 text-lg leading-8 text-slate-600 dark:text-slate-400">Key projects showcasing my
+                    expertise in FinTech infrastructure</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div
+                    class="flex flex-col bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover-lift overflow-hidden group">
+                    <!-- Top Image Area -->
+                    <div
+                        class="relative h-56 w-full bg-slate-50 dark:bg-slate-800/80 p-6 flex flex-col items-center justify-center border-b border-slate-100 dark:border-slate-700">
+                        <div
+                            class="absolute inset-4 rounded-xl border-2 border-dashed border-slate-300 dark:border-slate-600 transition-colors group-hover:border-teal-400">
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-teal-500/5 to-blue-500/5 group-hover:from-teal-500/10 group-hover:to-blue-500/10 transition-colors">
+                        </div>
+                        <i
+                            class="fas fa-server text-4xl text-teal-500 dark:text-teal-400 z-10 group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+
+                    <div class="flex flex-1 flex-col p-6 sm:p-8">
+                        <span
+                            class="inline-flex max-w-max items-center rounded-full bg-teal-50 dark:bg-teal-500/10 px-2.5 py-0.5 text-xs font-semibold text-teal-700 dark:text-teal-400 mb-4">Infrastructure</span>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 tracking-tight">Banking
+                            Infrastructure Modernization</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-6 flex-1">Led the migration of legacy
+                            banking systems to a containerized microservices architecture, improving scalability,
+                            reliability, and deployment efficiency. Implemented Docker-based CI/CD pipelines and
+                            optimized Oracle 19c on Linux environments.</p>
+
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Docker</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Databases</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Linux</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">CI/CD</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">High
+                                Availability</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Load
+                                Balancing</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Security</span>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-4 pt-4 border-t border-slate-100 dark:border-slate-700 text-sm">
+                            <div class="flex flex-col">
+                                <span class="font-bold text-slate-900 dark:text-white">Enterprise</span>
+                                <span class="text-slate-500 dark:text-slate-400 text-xs mt-0.5">FinTech Systems</span>
+                            </div>
+                            <div class="w-px h-8 bg-slate-200 dark:bg-slate-700"></div>
+                            <div class="flex flex-col">
+                                <span class="font-bold text-slate-900 dark:text-white">HA</span>
+                                <span class="text-slate-500 dark:text-slate-400 text-xs mt-0.5">Infrastructure</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div
+                    class="flex flex-col bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover-lift overflow-hidden group">
+                    <!-- Top Image Area -->
+                    <div
+                        class="relative h-56 w-full bg-slate-50 dark:bg-slate-800/80 p-6 flex flex-col items-center justify-center border-b border-slate-100 dark:border-slate-700">
+                        <div
+                            class="absolute inset-4 rounded-xl border-2 border-dashed border-slate-300 dark:border-slate-600 transition-colors group-hover:border-blue-400">
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-indigo-500/5 group-hover:from-blue-500/10 group-hover:to-indigo-500/10 transition-colors">
+                        </div>
+                        <i
+                            class="fas fa-shield-alt text-4xl text-blue-500 dark:text-blue-400 z-10 group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+
+                    <div class="flex flex-1 flex-col p-6 sm:p-8">
+                        <span
+                            class="inline-flex max-w-max items-center rounded-full bg-blue-50 dark:bg-blue-500/10 px-2.5 py-0.5 text-xs font-semibold text-blue-700 dark:text-blue-400 mb-4">Full-Stack</span>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 tracking-tight">Risk Management
+                            Platform</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-6 flex-1">Built a full-stack risk
+                            analysis platform processing financial data in real-time for proactive risk assessment.</p>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">FastAPI</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Next.js</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">SQL
+                                Server</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Data
+                                Analysis</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Business
+                                Intelligence</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Financial
+                                Systems</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Risk
+                                Management</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">ClickHouse</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">MinIo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div
+                    class="flex flex-col bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover-lift overflow-hidden group">
+                    <!-- Top Image Area -->
+                    <div
+                        class="relative h-56 w-full bg-slate-50 dark:bg-slate-800/80 p-6 flex flex-col items-center justify-center border-b border-slate-100 dark:border-slate-700">
+                        <div
+                            class="absolute inset-4 rounded-xl border-2 border-dashed border-slate-300 dark:border-slate-600 transition-colors group-hover:border-purple-400">
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-pink-500/5 group-hover:from-purple-500/10 group-hover:to-pink-500/10 transition-colors">
+                        </div>
+                        <i
+                            class="fas fa-brain text-4xl text-purple-500 dark:text-purple-400 z-10 group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+
+                    <div class="flex flex-1 flex-col p-6 sm:p-8">
+                        <span
+                            class="inline-flex max-w-max items-center rounded-full bg-purple-50 dark:bg-purple-500/10 px-2.5 py-0.5 text-xs font-semibold text-purple-700 dark:text-purple-400 mb-4">AI/ML</span>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 tracking-tight">Object
+                            Detection System</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-6 flex-1">Developed a hybrid deep
+                            learning model for real-time object detection with optimized inference performance.</p>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Python</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">PyTorch</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">OpenCV</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="bg-slate-50 dark:bg-slate-800/50 py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl lg:text-center mb-16">
+                <span class="text-base font-semibold leading-7 text-teal-600 dark:text-teal-400">Background</span>
+                <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Education
+                    & Certifications</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <!-- Education Item 1 -->
+                <div
+                    class="flex gap-6 bg-white dark:bg-slate-800 rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md transition-shadow">
+                    <div
+                        class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-teal-50 dark:bg-teal-500/10 text-teal-600 dark:text-teal-400 text-xl border border-teal-100 dark:border-teal-500/20">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <span class="inline-block text-sm font-medium text-slate-500 dark:text-slate-400 mb-2">2021 -
+                            2023</span>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">M.Sc. in Artificial
+                            Intelligence</h3>
+                        <span class="block text-sm font-semibold text-teal-600 dark:text-teal-400 mb-3">Monastir
+                            University</span>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Specialized in Machine
+                            Learning, NLP, and Decision Support Systems</p>
+                    </div>
+                </div>
+
+                <!-- Education Item 2 -->
+                <div
+                    class="flex gap-6 bg-white dark:bg-slate-800 rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md transition-shadow">
+                    <div
+                        class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-teal-50 dark:bg-teal-500/10 text-teal-600 dark:text-teal-400 text-xl border border-teal-100 dark:border-teal-500/20">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <span class="inline-block text-sm font-medium text-slate-500 dark:text-slate-400 mb-2">2018 -
+                            2021</span>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">B.Sc. in Computer Science</h3>
+                        <span class="block text-sm font-semibold text-teal-600 dark:text-teal-400 mb-3">Monastir
+                            University</span>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Foundations in algorithms,
+                            data structures, and software engineering</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div
+                    class="flex items-center gap-4 bg-white dark:bg-slate-800 rounded-xl p-4 shadow-sm border border-slate-100 dark:border-slate-700 hover:border-teal-500/30 transition-colors">
+                    <i class="fas fa-certificate text-teal-500 text-lg"></i>
+                    <span class="text-sm font-medium text-slate-700 dark:text-slate-200">IBM Data Science
+                        Specialization</span>
+                </div>
+                <div
+                    class="flex items-center gap-4 bg-white dark:bg-slate-800 rounded-xl p-4 shadow-sm border border-slate-100 dark:border-slate-700 hover:border-teal-500/30 transition-colors">
+                    <i class="fas fa-certificate text-teal-500 text-lg"></i>
+                    <span class="text-sm font-medium text-slate-700 dark:text-slate-200">Python - University of
+                        Michigan</span>
+                </div>
+                <div
+                    class="flex items-center gap-4 bg-white dark:bg-slate-800 rounded-xl p-4 shadow-sm border border-slate-100 dark:border-slate-700 hover:border-teal-500/30 transition-colors">
+                    <i class="fas fa-certificate text-teal-500 text-lg"></i>
+                    <span class="text-sm font-medium text-slate-700 dark:text-slate-200">IBM Agile Development &
+                        Scrum</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-white dark:bg-slate-900 py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-8 items-center">
+
+                <!-- Contact Info -->
+                <div>
+                    <span class="text-base font-semibold leading-7 text-teal-600 dark:text-teal-400">Get In Touch</span>
+                    <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl mb-6">
+                        Let's Work Together</h2>
+                    <p class="text-lg leading-8 text-slate-600 dark:text-slate-400 mb-10">
+                        Open to consulting opportunities, collaborative projects, and roles in FinTech,
+                        DevOps, or infrastructure engineering. Let's discuss how I can contribute to your next
+                        initiative.
+                    </p>
+
+                    <div class="space-y-6">
+                        <a href="mailto:farhatrekaya2007@gmail.com"
+                            class="flex items-center gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group">
+                            <div
+                                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-white dark:bg-slate-700 shadow-sm border border-slate-100 dark:border-slate-600 text-teal-600 dark:text-teal-400 group-hover:scale-110 transition-transform">
+                                <i class="fas fa-envelope text-lg"></i>
+                            </div>
+                            <div>
+                                <span class="block text-sm font-medium text-slate-500 dark:text-slate-400">Email</span>
+                                <span
+                                    class="block text-base font-semibold text-slate-900 dark:text-white">farhatrekaya2007@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/farhatrekaya/" target="_blank"
+                            class="flex items-center gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group">
+                            <div
+                                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-white dark:bg-slate-700 shadow-sm border border-slate-100 dark:border-slate-600 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform">
+                                <i class="fab fa-linkedin-in text-lg"></i>
+                            </div>
+                            <div>
+                                <span
+                                    class="block text-sm font-medium text-slate-500 dark:text-slate-400">LinkedIn</span>
+                                <span
+                                    class="block text-base font-semibold text-slate-900 dark:text-white">linkedin.com/in/farhatrekaya</span>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/FARHATREKAYA" target="_blank"
+                            class="flex items-center gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group">
+                            <div
+                                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-white dark:bg-slate-700 shadow-sm border border-slate-100 dark:border-slate-600 text-slate-900 dark:text-white group-hover:scale-110 transition-transform">
+                                <i class="fab fa-github text-lg"></i>
+                            </div>
+                            <div>
+                                <span class="block text-sm font-medium text-slate-500 dark:text-slate-400">GitHub</span>
+                                <span
+                                    class="block text-base font-semibold text-slate-900 dark:text-white">github.com/FARHATREKAYA</span>
+                            </div>
+                        </a>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50">
+                            <div
+                                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-white dark:bg-slate-700 shadow-sm border border-slate-100 dark:border-slate-600 text-red-500 dark:text-red-400">
+                                <i class="fas fa-map-marker-alt text-lg"></i>
+                            </div>
+                            <div>
+                                <span
+                                    class="block text-sm font-medium text-slate-500 dark:text-slate-400">Location</span>
+                                <span class="block text-base font-semibold text-slate-900 dark:text-white">Available
+                                    Worldwide (Remote)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terminal Visual -->
+                <div class="lg:ml-auto w-full max-w-lg">
+                    <div class="rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 shadow-2xl">
+                        <!-- Terminal Header -->
+                        <div class="flex items-center px-4 py-3 bg-slate-800/50 border-b border-slate-800">
+                            <div class="flex space-x-2">
+                                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                            </div>
+                            <div class="flex-1 text-center font-mono text-xs text-slate-400">contact.sh</div>
+                        </div>
+                        <!-- Terminal Body -->
+                        <div class="p-6 font-mono text-sm leading-relaxed text-slate-300">
+                            <div class="mb-4">
+                                <span class="text-teal-400">farhat@portfolio</span><span
+                                    class="text-slate-500">:</span><span class="text-blue-400">~</span><span
+                                    class="text-slate-500">$</span> <span class="text-yellow-300">echo</span> "Let's
+                                connect!"<br>
+                                <span class="text-slate-100">Open for opportunities</span>
+                            </div>
+                            <div class="mb-4">
+                                <span class="text-teal-400">farhat@portfolio</span><span
+                                    class="text-slate-500">:</span><span class="text-blue-400">~</span><span
+                                    class="text-slate-500">$</span> <span class="text-yellow-300">mailto</span>
+                                farhatrekaya2007@gmail.com<br>
+                                <span class="text-slate-100">Sending message...</span>
+                            </div>
+                            <div>
+                                <span class="text-teal-400">farhat@portfolio</span><span
+                                    class="text-slate-500">:</span><span class="text-blue-400">~</span><span
+                                    class="text-slate-500">$</span> <span
+                                    class="inline-block w-2 h-4 bg-slate-300 animate-pulse align-middle"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-12">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <span class="text-xl font-black tracking-tighter text-teal-600 dark:text-teal-400">FR<span
+                        class="text-slate-900 dark:text-white">.</span></span>
+                <span class="text-sm text-slate-500 dark:text-slate-400 ml-2">© 2025 Farhat Rekaya. All rights
+                    reserved.</span>
+            </div>
+
+            <div class="flex items-center space-x-6">
+                <a href="https://www.linkedin.com/in/farhatrekaya/" target="_blank"
+                    class="text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                    <span class="sr-only">LinkedIn</span>
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="https://github.com/FARHATREKAYA" target="_blank"
+                    class="text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">
+                    <span class="sr-only">GitHub</span>
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+                <a href="https://x.com/RekayaFarhat" target="_blank"
+                    class="text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">
+                    <span class="sr-only">X (Twitter)</span>
+                    <i class="fab fa-x-twitter text-xl"></i>
+                </a>
             </div>
         </div>
     </footer>
 
     <script src="js/scripts.js"></script>
 </body>
+
 </html>
