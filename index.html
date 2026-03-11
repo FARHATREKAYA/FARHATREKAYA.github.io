@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Farhat Rekaya - Technical Consultant specialized in FinTech Systems and High-Availability Infrastructure">
-    <title>Farhat Rekaya | Technical Consultant - FinTech & Infrastructure</title>
+        content="Farhat Rekaya — Enterprise FinTech &amp; Compliance Systems Engineer building fiscal compliance middleware, ERP integrations, and high-availability backend platforms.">
+    <title>Farhat Rekaya | Enterprise FinTech &amp; Compliance Systems Engineer</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
@@ -145,14 +145,6 @@
             }
         }
 
-        /* --- SKILLS SECTION --- */
-        /* Methodologies card: lg:col-span-2 should not span on mobile */
-        @media (max-width: 767px) {
-            .methodologies-card {
-                grid-column: span 1 !important;
-            }
-        }
-
         /* --- EXPERIENCE TIMELINE --- */
         /* Make sure timeline line doesn't overflow on mobile */
         @media (max-width: 767px) {
@@ -209,6 +201,8 @@
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#about" class="text-sm font-medium hover:text-teal-500 transition-colors">About</a>
+                    <a href="#current-focus" class="text-sm font-medium hover:text-teal-500 transition-colors">Current
+                        Focus</a>
                     <a href="#skills" class="text-sm font-medium hover:text-teal-500 transition-colors">Skills</a>
                     <a href="#experience"
                         class="text-sm font-medium hover:text-teal-500 transition-colors">Experience</a>
@@ -260,6 +254,9 @@
             <div class="px-4 pt-2 pb-6 space-y-1">
                 <a href="#about"
                     class="mobile-link block px-3 py-3 rounded-md text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">About</a>
+                <a href="#current-focus"
+                    class="mobile-link block px-3 py-3 rounded-md text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Current
+                    Focus</a>
                 <a href="#skills"
                     class="mobile-link block px-3 py-3 rounded-md text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Skills</a>
                 <a href="#experience"
@@ -286,7 +283,7 @@
                                 class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
                             <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-teal-500"></span>
                         </span>
-                        Available for Projects
+                        Currently Building: Axiom Fiscal (MVP)
                     </div>
 
                     <h1
@@ -297,16 +294,16 @@
                     </h1>
 
                     <h2 class="text-xl sm:text-2xl lg:text-3xl font-semibold text-slate-700 dark:text-slate-300 mb-6">
-                        Technical Consultant
+                        Enterprise FinTech &amp; Compliance Systems Engineer
+                        <span class="block sm:inline">| Technical Consultant</span>
                     </h2>
 
                     <p class="text-lg text-slate-600 dark:text-slate-400 mb-10 leading-relaxed max-w-xl">
-                        Specialized in <strong class="text-slate-900 dark:text-white font-semibold">FinTech
-                            Systems</strong> and <strong
-                            class="text-slate-900 dark:text-white font-semibold">High-Availability
-                            Infrastructure</strong>.
-                        With 2+ years of hands-on experience in Oracle database systems, backend infrastructure,
-                        DevOps automation, and financial data architecture.
+                        I build enterprise FinTech backend systems focused on integration, compliance, and reliability.
+                        Core focus areas: middleware workflows, ERP-connected services, and secure high-availability
+                        environments across <strong class="text-slate-900 dark:text-white font-semibold">Oracle</strong>,
+                        <strong class="text-slate-900 dark:text-white font-semibold">Linux</strong>, and <strong
+                            class="text-slate-900 dark:text-white font-semibold">Docker-based CI/CD</strong>.
                     </p>
 
                     <div class="flex flex-wrap gap-3 mb-10 sm:mb-12">
@@ -336,7 +333,7 @@
                             <div class="text-3xl font-bold text-slate-900 dark:text-white mb-1">3</div>
                             <div
                                 class="text-sm font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider">
-                                FinTech Projects</div>
+                                Enterprise Builds</div>
                         </div>
                     </div>
                 </div>
@@ -371,89 +368,84 @@
         </div>
     </section>
 
+    <!-- Current Focus Section -->
+    <section id="current-focus" class="bg-slate-50 dark:bg-slate-800/50 py-16 sm:py-20">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-3xl">
+                <div
+                    class="rounded-2xl border border-teal-100 dark:border-teal-500/20 bg-white dark:bg-slate-900/60 p-6 sm:p-8 shadow-sm">
+                    <div class="flex flex-wrap items-center gap-3 mb-4">
+                        <span
+                            class="inline-flex items-center rounded-full bg-teal-50 dark:bg-teal-500/10 px-3 py-1 text-xs font-semibold text-teal-700 dark:text-teal-400 border border-teal-100 dark:border-teal-500/20">Current
+                            Focus</span>
+                        <span
+                            class="inline-flex items-center rounded-full bg-amber-50 dark:bg-amber-500/10 px-3 py-1 text-xs font-semibold text-amber-700 dark:text-amber-400 border border-amber-100 dark:border-amber-500/20">In
+                            Development</span>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white mb-4">
+                        Axiom Fiscal / EL Fatoora Connector
+                    </h2>
+                    <p class="text-base sm:text-lg leading-8 text-slate-600 dark:text-slate-400 mb-5">
+                        Currently building a private MVP for Tunisia fiscal compliance workflows. Axiom is designed as
+                        middleware between upstream invoicing/ERP systems and EL Fatoora processes, focused on
+                        ingestion, validation, submission workflow control, and auditability without replacing source
+                        systems.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 rounded-full text-xs font-medium bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300">Upstream
+                            System Integration</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-xs font-medium bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300">CSV
+                            Ingestion</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-xs font-medium bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300">Compliance
+                            Validation Layer</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-xs font-medium bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300">Artifact
+                            Generation</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-xs font-medium bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300">Submission
+                            Workflow</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-xs font-medium bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300">Audit
+                            Trail</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-xs font-medium bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300">Failed-Invoice
+                            Diagnostics</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-xs font-medium bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300">CFO
+                            Reporting Intelligence</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Skills Section -->
     <section id="skills" class="bg-white dark:bg-slate-900 py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl lg:text-center mb-16">
-                <h2 class="text-base font-semibold leading-7 text-teal-600 dark:text-teal-400">Technical Stack</h2>
-                <p class="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Skills &
+                <h2 class="text-base font-semibold leading-7 text-teal-600 dark:text-teal-400">System Capabilities</h2>
+                <p class="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Skills &amp;
                     Expertise</p>
-                <p class="mt-6 text-lg leading-8 text-slate-600 dark:text-slate-400">Technologies I work with to build
-                    robust, scalable financial systems</p>
+                <p class="mt-6 text-lg leading-8 text-slate-600 dark:text-slate-400">Structured around the enterprise
+                    outcomes I deliver</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Databases -->
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                 <div
                     class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-100 dark:border-slate-800 hover:border-teal-500/30 dark:hover:border-teal-500/30 transition-colors shadow-sm">
-                    <div class="flex items-center gap-4 mb-6">
+                    <div class="flex items-center gap-4 mb-4">
                         <div
                             class="flex h-12 w-12 items-center justify-center rounded-xl bg-teal-500/10 text-teal-600 dark:text-teal-400">
-                            <i class="fas fa-database text-xl"></i>
-                        </div>
-                        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Databases</h3>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Oracle
-                            Database 19c</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Microsoft
-                            SQL Server</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">MySQL</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">ClickHouse</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">SQLite</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">MinIO</span>
-                    </div>
-                </div>
-
-                <!-- DevOps -->
-                <div
-                    class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-100 dark:border-slate-800 hover:border-blue-500/30 dark:hover:border-blue-500/30 transition-colors shadow-sm">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div
-                            class="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400">
-                            <i class="fas fa-server text-xl"></i>
-                        </div>
-                        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">DevOps</h3>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Docker</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">CI/CD
-                            Pipelines</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Git</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Shell
-                            Scripting</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Infrastructure
-                            Security</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">High-Availability
-                            Architecture</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Disaster
-                            Recovery</span>
-                    </div>
-                </div>
-
-                <!-- Backend -->
-                <div
-                    class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-100 dark:border-slate-800 hover:border-emerald-500/30 dark:hover:border-emerald-500/30 transition-colors shadow-sm">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div
-                            class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">
                             <i class="fas fa-code text-xl"></i>
                         </div>
-                        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Backend</h3>
+                        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Enterprise Backend &amp; APIs
+                        </h3>
                     </div>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-5">Backend APIs and middleware services for
+                        enterprise financial workflows and integration-heavy systems.</p>
                     <div class="flex flex-wrap gap-2">
                         <span
                             class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Python</span>
@@ -467,156 +459,177 @@
                             class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">.NET
                             (C# / ASP.NET)</span>
                         <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">C</span>
-                        <span
                             class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">SQL</span>
-                    </div>
-                </div>
-
-                <!-- Frontend -->
-                <div
-                    class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-100 dark:border-slate-800 hover:border-indigo-500/30 dark:hover:border-indigo-500/30 transition-colors shadow-sm">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div
-                            class="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-500/10 text-indigo-600 dark:text-indigo-400">
-                            <i class="fas fa-laptop-code text-xl"></i>
-                        </div>
-                        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Frontend</h3>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">React</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Next.js</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Tailwind
-                            CSS</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Bootstrap
-                            4</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">jQuery</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">HTML5</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">CSS3</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">JavaScript</span>
-                    </div>
-                </div>
-
-                <!-- Data & AI -->
-                <div
-                    class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-100 dark:border-slate-800 hover:border-purple-500/30 dark:hover:border-purple-500/30 transition-colors shadow-sm">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div
-                            class="flex h-12 w-12 items-center justify-center rounded-xl bg-purple-500/10 text-purple-600 dark:text-purple-400">
-                            <i class="fas fa-chart-line text-xl"></i>
-                        </div>
-                        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Data & AI</h3>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Power
-                            BI</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">KNIME</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Data
-                            Analysis</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Business
-                            Intelligence</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Machine
-                            Learning</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Risk
-                            Management Systems</span>
-                    </div>
-                </div>
-
-                <!-- APIs & Integration -->
-                <div
-                    class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-100 dark:border-slate-800 hover:border-pink-500/30 dark:hover:border-pink-500/30 transition-colors shadow-sm">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div
-                            class="flex h-12 w-12 items-center justify-center rounded-xl bg-pink-500/10 text-pink-600 dark:text-pink-400">
-                            <i class="fas fa-plug text-xl"></i>
-                        </div>
-                        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">APIs & Integration</h3>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
                         <span
                             class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">RESTful
                             APIs</span>
                         <span
                             class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Swagger</span>
                         <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Middleware
+                            Services</span>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-100 dark:border-slate-800 hover:border-blue-500/30 dark:hover:border-blue-500/30 transition-colors shadow-sm">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div
+                            class="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400">
+                            <i class="fas fa-database text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">ERP / Data Integration</h3>
+                    </div>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-5">Integrating ERP and upstream data flows
+                        into compliance pipelines, reporting stores, and controlled submission workflows.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Oracle
+                            Database 19c</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Microsoft
+                            SQL Server</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">PostgreSQL</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">MySQL</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">SQLite</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">CSV
+                            Ingestion</span>
+                        <span
                             class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">System
                             Integration</span>
                         <span
                             class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Business
-                            Rules Implementation</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Financial
-                            Flows Architecture</span>
+                            Rules</span>
                     </div>
                 </div>
 
-                <!-- Operating Systems -->
                 <div
-                    class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-100 dark:border-slate-800 hover:border-orange-500/30 dark:hover:border-orange-500/30 transition-colors shadow-sm">
-                    <div class="flex items-center gap-4 mb-6">
+                    class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-100 dark:border-slate-800 hover:border-emerald-500/30 dark:hover:border-emerald-500/30 transition-colors shadow-sm">
+                    <div class="flex items-center gap-4 mb-4">
                         <div
-                            class="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-500/10 text-orange-600 dark:text-orange-400">
-                            <i class="fas fa-desktop text-xl"></i>
+                            class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">
+                            <i class="fas fa-shield-alt text-xl"></i>
                         </div>
-                        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Operating Systems</h3>
+                        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Compliance, Audit &amp;
+                            Financial Workflows</h3>
                     </div>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-5">Designing compliance workflows with
+                        validation rules, failure handling, and end-to-end traceability.</p>
                     <div class="flex flex-wrap gap-2">
                         <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Compliance
+                            Validation</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Audit
+                            Trails</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Failed-Invoice
+                            Diagnostics</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">TEIF
+                            / XML Processing</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Artifact
+                            Generation</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Submission
+                            Workflows</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">XAdES
+                            Signing</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Financial
+                            Workflow Controls</span>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-100 dark:border-slate-800 hover:border-orange-500/30 dark:hover:border-orange-500/30 transition-colors shadow-sm">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div
+                            class="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-500/10 text-orange-600 dark:text-orange-400">
+                            <i class="fas fa-server text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Cloud, DevOps &amp; High
+                            Availability</h3>
+                    </div>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-5">Infrastructure operations for secure,
+                        high-availability environments and predictable releases.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Docker</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">CI/CD
+                            Pipelines</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Git</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Shell
+                            Scripting</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Load
+                            Balancers</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Reverse
+                            Proxies</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">SSL/TLS
+                            Certificates</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Infrastructure
+                            Security</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">High-Availability
+                            Architecture</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Disaster
+                            Recovery</span>
+                        <span
                             class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Oracle
-                            Linux</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Ubuntu</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Red
-                            Hat</span>
+                            Linux / Ubuntu / Red Hat</span>
                         <span
                             class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Windows
                             Server</span>
                     </div>
                 </div>
 
-                <!-- Methodologies & Tools -->
                 <div
-                    class="methodologies-card bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-100 dark:border-slate-800 hover:border-rose-500/30 dark:hover:border-rose-500/30 transition-colors shadow-sm lg:col-span-2">
-                    <div class="flex items-center gap-4 mb-6">
+                    class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-100 dark:border-slate-800 hover:border-purple-500/30 dark:hover:border-purple-500/30 transition-colors shadow-sm">
+                    <div class="flex items-center gap-4 mb-4">
                         <div
-                            class="flex h-12 w-12 items-center justify-center rounded-xl bg-rose-500/10 text-rose-600 dark:text-rose-400">
-                            <i class="fas fa-users-cog text-xl"></i>
+                            class="flex h-12 w-12 items-center justify-center rounded-xl bg-purple-500/10 text-purple-600 dark:text-purple-400">
+                            <i class="fas fa-chart-line text-xl"></i>
                         </div>
-                        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Methodologies & Tools</h3>
+                        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Reporting, Analytics &amp;
+                            Automation</h3>
                     </div>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-5">Building reporting layers for finance
+                        leadership, automated monitoring, and operational visibility.</p>
                     <div class="flex flex-wrap gap-2">
                         <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Agile</span>
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Power
+                            BI</span>
                         <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Scrum</span>
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">ClickHouse</span>
                         <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">JIRA</span>
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">KNIME</span>
                         <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">ZenHub</span>
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Data
+                            Analysis</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">MinIO</span>
+                        <span
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Business
+                            Intelligence</span>
                         <span
                             class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Incident
                             Management</span>
-                        <span
-                            class="px-3 py-1 rounded-full text-sm font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm">Cross-functional
-                            Collaboration</span>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -630,9 +643,8 @@
                     class="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
                     Work
                     Experience</p>
-                <p class="mt-4 sm:mt-6 text-base sm:text-lg leading-8 text-slate-600 dark:text-slate-400">My
-                    professional journey in FinTech
-                    and software engineering</p>
+                <p class="mt-4 sm:mt-6 text-base sm:text-lg leading-8 text-slate-600 dark:text-slate-400">Enterprise
+                    engineering roles across FinTech infrastructure, backend delivery, and operational reliability.</p>
             </div>
 
             <!-- ===== MOBILE EXPERIENCE CARDS (md:hidden) ===== -->
@@ -677,21 +689,20 @@
                     </div>
                     <ul class="px-4 pt-3 pb-4 space-y-2 text-xs text-slate-600 dark:text-slate-400">
                         <li class="flex gap-2"><i
-                                class="fas fa-check-circle text-teal-500 mt-0.5 shrink-0"></i><span>Managed backend
-                                infrastructure on Oracle Linux, ensuring high availability, security, and optimal
-                                database performance.</span></li>
+                                class="fas fa-check-circle text-teal-500 mt-0.5 shrink-0"></i><span>Supported
+                                production infrastructure across Oracle Linux and Windows Server environments.</span></li>
                         <li class="flex gap-2"><i
-                                class="fas fa-check-circle text-teal-500 mt-0.5 shrink-0"></i><span>Automated
-                                deployments using Docker, shell scripting, and CI/CD pipelines, reducing operational
-                                overhead.</span></li>
+                                class="fas fa-check-circle text-teal-500 mt-0.5 shrink-0"></i><span>Managed
+                                Docker-based deployments and CI/CD release routines for backend and middleware
+                                services.</span></li>
                         <li class="flex gap-2"><i
-                                class="fas fa-check-circle text-teal-500 mt-0.5 shrink-0"></i><span>Secured
-                                infrastructure via firewalls, SSL/HTTPS certificates, and hardening practices.</span>
-                        </li>
+                                class="fas fa-check-circle text-teal-500 mt-0.5 shrink-0"></i><span>Supported Oracle,
+                                MySQL, and SQL Server operations, plus load balancer/proxy and SSL/TLS certificate
+                                handling.</span></li>
                         <li class="flex gap-2"><i
-                                class="fas fa-check-circle text-teal-500 mt-0.5 shrink-0"></i><span>Drove DevOps
-                                practices across teams, standardizing releases and ensuring disaster recovery
-                                readiness.</span></li>
+                                class="fas fa-check-circle text-teal-500 mt-0.5 shrink-0"></i><span>Troubleshot
+                                incidents and maintained runbooks, deployment documentation, and architecture
+                                diagrams.</span></li>
                     </ul>
                 </div>
 
@@ -735,17 +746,19 @@
                     </div>
                     <ul class="px-4 pt-3 pb-4 space-y-2 text-xs text-slate-600 dark:text-slate-400">
                         <li class="flex gap-2"><i
-                                class="fas fa-check-circle text-blue-500 mt-0.5 shrink-0"></i><span>Engineered and
-                                deployed robust, scalable banking systems.</span></li>
+                                class="fas fa-check-circle text-blue-500 mt-0.5 shrink-0"></i><span>Built and
+                                supported FastAPI backend components for banking and risk workflows.</span></li>
                         <li class="flex gap-2"><i
-                                class="fas fa-check-circle text-blue-500 mt-0.5 shrink-0"></i><span>Developed full-stack
-                                apps using SQL, Python (FastAPI), Docker, and Next.js.</span></li>
+                                class="fas fa-check-circle text-blue-500 mt-0.5 shrink-0"></i><span>Delivered
+                                Docker-based deployments and CI/CD routines for reliable release cycles.</span>
+                        </li>
                         <li class="flex gap-2"><i
-                                class="fas fa-check-circle text-blue-500 mt-0.5 shrink-0"></i><span>Conducted data
-                                analysis to optimize risk management strategies.</span></li>
+                                class="fas fa-check-circle text-blue-500 mt-0.5 shrink-0"></i><span>Implemented SQL data
+                                flows and validation logic for risk and BI reporting use cases.</span></li>
                         <li class="flex gap-2"><i
-                                class="fas fa-check-circle text-blue-500 mt-0.5 shrink-0"></i><span>Implemented CI/CD
-                                pipelines and automated testing for reliability.</span></li>
+                                class="fas fa-check-circle text-blue-500 mt-0.5 shrink-0"></i><span>Contributed to
+                                troubleshooting, release documentation, and cross-team delivery alignment.</span>
+                        </li>
                     </ul>
                 </div>
 
@@ -785,7 +798,7 @@
 
             </div><!-- end mobile experience cards -->
 
-            <!-- ===== DESKTOP TIMELINE (md+ only — UNCHANGED) ===== -->
+            <!-- ===== DESKTOP TIMELINE (md+ only) ===== -->
             <div class="hidden md:block">
                 <div class="mx-auto max-w-4xl relative">
                     <!-- Timeline Line -->
@@ -854,51 +867,34 @@
                                     <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400">
                                         <li class="flex gap-x-3"><i
                                                 class="fas fa-check-circle text-teal-500 mt-1 shrink-0"></i>
-                                            <span>Managed
-                                                backend infrastructure on Oracle Linux, ensuring high availability,
-                                                security, and optimal database/application performance.</span>
+                                            <span>Supported production infrastructure across Oracle Linux and Windows
+                                                Server environments for finance-critical systems.</span>
                                         </li>
                                         <li class="flex gap-x-3"><i
                                                 class="fas fa-check-circle text-teal-500 mt-1 shrink-0"></i>
-                                            <span>Automated
-                                                deployments and environment provisioning using Docker, shell scripting,
-                                                and
-                                                CI/CD pipelines, reducing operational overhead and human error.</span>
+                                            <span>Managed Docker-based deployments and CI/CD release workflows for
+                                                backend and middleware services.</span>
                                         </li>
                                         <li class="flex gap-x-3"><i
                                                 class="fas fa-check-circle text-teal-500 mt-1 shrink-0"></i>
-                                            <span>Monitored
-                                                and optimized Oracle databases and middleware, implementing performance
-                                                tuning, capacity planning, and proactive issue detection.</span>
+                                            <span>Supported Oracle, MySQL, and SQL Server environments with focus on
+                                                availability, backups, and connectivity.</span>
                                         </li>
                                         <li class="flex gap-x-3"><i
                                                 class="fas fa-check-circle text-teal-500 mt-1 shrink-0"></i>
-                                            <span>Secured
-                                                infrastructure by configuring firewalls, managing SSL/HTTPS
-                                                certificates,
-                                                and applying hardening practices for network and application
-                                                layers.</span>
+                                            <span>Configured reverse proxies and load balancers, and handled SSL/TLS
+                                                certificate lifecycle tasks.</span>
                                         </li>
                                         <li class="flex gap-x-3"><i
                                                 class="fas fa-check-circle text-teal-500 mt-1 shrink-0"></i>
-                                            <span>Troubleshot and resolved critical production incidents across
-                                                application,
-                                                database, and networking layers, minimizing downtime and ensuring
-                                                business
-                                                continuity.</span>
+                                            <span>Troubleshot incidents across application, database, and network layers
+                                                to keep systems stable.</span>
                                         </li>
                                         <li class="flex gap-x-3"><i
                                                 class="fas fa-check-circle text-teal-500 mt-1 shrink-0"></i>
-                                            <span>Collaborated with cross-functional teams on system upgrades, cloud
-                                                migration strategies, and infrastructure scaling, contributing to
-                                                long-term
-                                                architectural roadmaps.</span>
+                                            <span>Maintained runbooks, deployment documentation, and architecture
+                                                diagrams for operations continuity.</span>
                                         </li>
-                                        <li class="flex gap-x-3"><i
-                                                class="fas fa-check-circle text-teal-500 mt-1 shrink-0"></i> <span>Drove
-                                                DevOps practices across development and operations teams, standardizing
-                                                release processes, automating monitoring, and ensuring disaster recovery
-                                                readiness.</span></li>
                                     </ul>
                                 </div>
                             </div>
@@ -964,29 +960,28 @@
                                     <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400">
                                         <li class="flex gap-x-3"><i
                                                 class="fas fa-check-circle text-blue-500 mt-1 shrink-0"></i>
-                                            <span>Engineered and deployed robust, scalable banking systems.</span>
+                                            <span>Built and maintained backend services for banking and risk-management
+                                                workflows.</span>
                                         </li>
                                         <li class="flex gap-x-3"><i
                                                 class="fas fa-check-circle text-blue-500 mt-1 shrink-0"></i>
-                                            <span>Developed
-                                                full-stack applications using SQL, Python (FastAPI), Docker, and
-                                                Next.js,
-                                                enhancing user experience.</span>
+                                            <span>Delivered SQL-backed services with Python (FastAPI), Docker, and
+                                                supporting API integrations.</span>
                                         </li>
                                         <li class="flex gap-x-3"><i
                                                 class="fas fa-check-circle text-blue-500 mt-1 shrink-0"></i>
-                                            <span>Conducted
-                                                data analysis to optimize risk management strategies.</span>
+                                            <span>Implemented data flows and validation logic for risk analytics and BI
+                                                reporting.</span>
                                         </li>
                                         <li class="flex gap-x-3"><i
                                                 class="fas fa-check-circle text-blue-500 mt-1 shrink-0"></i>
-                                            <span>Collaborated with cross-functional teams to deliver high-quality
-                                                software.</span>
+                                            <span>Contributed to Docker-based CI/CD, test automation, and release
+                                                reliability practices.</span>
                                         </li>
                                         <li class="flex gap-x-3"><i
                                                 class="fas fa-check-circle text-blue-500 mt-1 shrink-0"></i>
-                                            <span>Implemented CI/CD pipelines and automated testing to ensure
-                                                reliability.</span>
+                                            <span>Collaborated with product, risk, and technical teams on delivery
+                                                planning and documentation.</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -1056,271 +1051,112 @@
     <!-- Projects Section -->
     <section id="projects" class="bg-white dark:bg-slate-900 py-16 sm:py-24 lg:py-32">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="mx-auto max-w-2xl lg:text-center mb-10 sm:mb-16">
+            <div class="mx-auto max-w-3xl lg:text-center mb-10 sm:mb-16">
                 <span class="text-base font-semibold leading-7 text-teal-600 dark:text-teal-400">Portfolio</span>
                 <h2
                     class="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
-                    Featured
-                    Projects</h2>
-                <p class="mt-4 sm:mt-6 text-base sm:text-lg leading-8 text-slate-600 dark:text-slate-400">Key projects
-                    showcasing my
-                    expertise in FinTech infrastructure</p>
+                    Featured Projects</h2>
+                <p class="mt-4 sm:mt-6 text-base sm:text-lg leading-8 text-slate-600 dark:text-slate-400">Enterprise
+                    backend work spanning compliance middleware, operational reliability, and financial data systems.</p>
             </div>
 
-            <!-- ===== MOBILE PROJECT CARDS (visible only on < md) ===== -->
-            <div class="flex flex-col gap-4 md:hidden">
-
-                <!-- Mobile Project 1 -->
-                <div
-                    class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm overflow-hidden">
-                    <!-- Compact Header -->
-                    <div
-                        class="relative flex items-center gap-4 p-4 bg-gradient-to-r from-teal-500/10 to-blue-500/10 dark:from-teal-500/5 dark:to-blue-500/5 border-b border-slate-100 dark:border-slate-700">
-                        <div
-                            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-teal-500/10 dark:bg-teal-500/20">
-                            <i class="fas fa-server text-xl text-teal-500 dark:text-teal-400"></i>
-                        </div>
-                        <div class="min-w-0">
-                            <span
-                                class="inline-flex items-center rounded-full bg-teal-50 dark:bg-teal-500/10 px-2 py-0.5 text-xs font-semibold text-teal-700 dark:text-teal-400 mb-1">Infrastructure</span>
-                            <h3 class="text-sm font-bold text-slate-900 dark:text-white leading-snug">Banking
-                                Infrastructure Modernization</h3>
-                        </div>
-                    </div>
-                    <!-- Body -->
-                    <div class="p-4">
-                        <p class="text-xs text-slate-600 dark:text-slate-400 mb-3 leading-relaxed">Led the migration of
-                            legacy banking systems to a containerized microservices architecture. Implemented
-                            Docker-based CI/CD pipelines and optimized Oracle 19c on Linux environments.</p>
-                        <div class="flex flex-wrap gap-1.5">
-                            <span
-                                class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">Docker</span>
-                            <span
-                                class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">Oracle
-                                19c</span>
-                            <span
-                                class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">Linux</span>
-                            <span
-                                class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">CI/CD</span>
-                            <span
-                                class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">High
-                                Availability</span>
-                            <span
-                                class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">Security</span>
-                        </div>
-                        <div class="flex gap-4 mt-3 pt-3 border-t border-slate-100 dark:border-slate-700">
-                            <div>
-                                <span class="text-xs font-bold text-slate-800 dark:text-white block">Enterprise</span>
-                                <span class="text-xs text-slate-500">Systems</span>
-                            </div>
-                            <div class="w-px bg-slate-200 dark:bg-slate-700"></div>
-                            <div>
-                                <span class="text-xs font-bold text-slate-800 dark:text-white block">HA</span>
-                                <span class="text-xs text-slate-500">Infrastructure</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mobile Project 2 -->
-                <div
-                    class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm overflow-hidden">
-                    <div
-                        class="flex items-center gap-4 p-4 bg-gradient-to-r from-blue-500/10 to-indigo-500/10 dark:from-blue-500/5 dark:to-indigo-500/5 border-b border-slate-100 dark:border-slate-700">
-                        <div
-                            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-500/10 dark:bg-blue-500/20">
-                            <i class="fas fa-shield-alt text-xl text-blue-500 dark:text-blue-400"></i>
-                        </div>
-                        <div class="min-w-0">
-                            <span
-                                class="inline-flex items-center rounded-full bg-blue-50 dark:bg-blue-500/10 px-2 py-0.5 text-xs font-semibold text-blue-700 dark:text-blue-400 mb-1">Full-Stack</span>
-                            <h3 class="text-sm font-bold text-slate-900 dark:text-white leading-snug">Risk Management
-                                Platform</h3>
-                        </div>
-                    </div>
-                    <div class="p-4">
-                        <p class="text-xs text-slate-600 dark:text-slate-400 mb-3 leading-relaxed">Built a full-stack
-                            risk analysis platform processing financial data in real-time for proactive risk assessment
-                            using modern tech stack.</p>
-                        <div class="flex flex-wrap gap-1.5">
-                            <span
-                                class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">FastAPI</span>
-                            <span
-                                class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">Next.js</span>
-                            <span
-                                class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">SQL
-                                Server</span>
-                            <span
-                                class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">ClickHouse</span>
-                            <span
-                                class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">Risk
-                                Mgmt</span>
-                            <span
-                                class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">MinIO</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Mobile Project 3: Oracle MAA Assistant -->
-                <div
-                    class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm overflow-hidden">
-                    <div
-                        class="flex items-center gap-4 p-4 bg-gradient-to-r from-orange-500/10 to-amber-500/10 dark:from-orange-500/5 dark:to-amber-500/5 border-b border-slate-100 dark:border-slate-700">
-                        <div
-                            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-orange-500/10 dark:bg-orange-500/20">
-                            <i class="fas fa-database text-xl text-orange-500 dark:text-orange-400"></i>
-                        </div>
-                        <div class="min-w-0">
-                            <span
-                                class="inline-flex items-center rounded-full bg-orange-50 dark:bg-orange-500/10 px-2 py-0.5 text-xs font-semibold text-orange-700 dark:text-orange-400 mb-1">Oracle
-                                / HA</span>
-                            <h3 class="text-sm font-bold text-slate-900 dark:text-white leading-snug">Oracle MAA
-                                Assistant</h3>
-                        </div>
-                    </div>
-                    <div class="p-4">
-                        <p class="text-xs text-slate-600 dark:text-slate-400 mb-3 leading-relaxed">AI-powered Oracle
-                            High-Availability & Migration planner. Describe your environment and instantly get a
-                            tailored MAA plan — Data Guard, RAC, RMAN — exported to PDF.</p>
-                        <div class="flex flex-wrap gap-1.5 mb-3">
-                            <span
-                                class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">Oracle
-                                DB</span>
-                            <span
-                                class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">Data
-                                Guard</span>
-                            <span
-                                class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">RAC</span>
-                            <span
-                                class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">RMAN</span>
-                            <span
-                                class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">Next.js</span>
-                            <span
-                                class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">PDF
-                                Export</span>
-                        </div>
-        <a href="https://oracle-maa-assistant.vercel.app/" target="_blank"
-          class="inline-flex items-center gap-1.5 text-xs font-semibold text-orange-600 dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 transition-colors">
-          <i class="fas fa-external-link-alt text-xs"></i> Live Demo
-        </a>
-      </div>
-    </div>
-
-    <!-- Mobile Project 4: Fisc Shield TTN E-Invoicing -->
-    <div
-      class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm overflow-hidden">
-      <div
-        class="flex items-center gap-4 p-4 bg-gradient-to-r from-emerald-500/10 to-teal-500/10 dark:from-emerald-500/5 dark:to-teal-500/5 border-b border-slate-100 dark:border-slate-700">
-        <div
-          class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald-500/10 dark:bg-emerald-500/20">
-          <i class="fas fa-file-invoice-dollar text-xl text-emerald-500 dark:text-emerald-400"></i>
-        </div>
-        <div class="min-w-0">
-          <span
-            class="inline-flex items-center rounded-full bg-emerald-50 dark:bg-emerald-500/10 px-2 py-0.5 text-xs font-semibold text-emerald-700 dark:text-emerald-400 mb-1">FinTech / Compliance</span>
-          <h3 class="text-sm font-bold text-slate-900 dark:text-white leading-snug">Fisc Shield: TTN
-            E-Invoicing</h3>
-        </div>
-      </div>
-      <div class="p-4">
-        <p class="text-xs text-slate-600 dark:text-slate-400 mb-3 leading-relaxed">Cloud-native microservices platform
-          bridging legacy ERPs with Tunisia's El Fatoora (TTN). Features the "Fisc Shield" engine for real-time tax
-          validation, asynchronous TEIF 2.0 XML/PDF generation, and ClickHouse-powered CFO analytics.</p>
-        <div class="flex flex-wrap gap-1.5 mb-3">
-          <span
-            class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">Next.js</span>
-          <span
-            class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">FastAPI</span>
-          <span
-            class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">RabbitMQ</span>
-          <span
-            class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">ClickHouse</span>
-          <span
-            class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">MinIO</span>
-          <span
-            class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">XML/XAdES</span>
-        </div>
-       <div class="flex gap-4 mt-3 pt-3 border-t border-slate-100 dark:border-slate-700">
-                            <div>
-                                <span class="text-xs font-bold text-slate-800 dark:text-white block">Enterprise</span>
-                                <span class="text-xs text-slate-500">Systems</span>
-                            </div>
-                            <div class="w-px bg-slate-200 dark:bg-slate-700"></div>
-                            <div>
-                                <span class="text-xs font-bold text-slate-800 dark:text-white block">HA</span>
-                                <span class="text-xs text-slate-500">Infrastructure</span>
-                            </div>
-                        </div>
-      </div>
-    </div>
-
-    <!-- Mobile Project 5 -->
-    <div
-      class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm overflow-hidden">
-      <div
-        class="flex items-center gap-4 p-4 bg-gradient-to-r from-purple-500/10 to-pink-500/10 dark:from-purple-500/5 dark:to-pink-500/5 border-b border-slate-100 dark:border-slate-700">
-        <div
-          class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-purple-500/10 dark:bg-purple-500/20">
-          <i class="fas fa-brain text-xl text-purple-500 dark:text-purple-400"></i>
-        </div>
-        <div class="min-w-0">
-          <span
-            class="inline-flex items-center rounded-full bg-purple-50 dark:bg-purple-500/10 px-2 py-0.5 text-xs font-semibold text-purple-700 dark:text-purple-400 mb-1">AI/ML</span>
-          <h3 class="text-sm font-bold text-slate-900 dark:text-white leading-snug">Object Detection
-            System</h3>
-        </div>
-      </div>
-                    <div class="p-4">
-                        <p class="text-xs text-slate-600 dark:text-slate-400 mb-3 leading-relaxed">Developed a hybrid
-                            deep learning model for real-time object detection with optimized inference performance on
-                            edge devices.</p>
-                        <div class="flex flex-wrap gap-1.5">
-                            <span
-                                class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">Python</span>
-                            <span
-                                class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">PyTorch</span>
-                            <span
-                                class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-xs text-slate-600 dark:text-slate-300">OpenCV</span>
-                        </div>
-                    </div>
-                </div>
-
-                
-
-            </div><!-- end mobile cards -->
-
-            <!-- ===== DESKTOP PROJECT CARDS (visible only on md+) ===== -->
-            <div class="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div
-                    class="flex flex-col bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover-lift overflow-hidden group">
-                    <!-- Top Image Area -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <article
+                    class="lg:col-span-2 flex flex-col bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm overflow-hidden">
                     <div
                         class="relative h-56 w-full bg-slate-50 dark:bg-slate-800/80 p-6 flex flex-col items-center justify-center border-b border-slate-100 dark:border-slate-700">
                         <div
-                            class="absolute inset-4 rounded-xl border-2 border-dashed border-slate-300 dark:border-slate-600 transition-colors group-hover:border-teal-400">
+                            class="absolute inset-4 rounded-xl border-2 border-dashed border-slate-300 dark:border-slate-600">
                         </div>
-                        <div
-                            class="absolute inset-0 bg-gradient-to-br from-teal-500/5 to-blue-500/5 group-hover:from-teal-500/10 group-hover:to-blue-500/10 transition-colors">
-                        </div>
-                        <i
-                            class="fas fa-server text-4xl text-teal-500 dark:text-teal-400 z-10 group-hover:scale-110 transition-transform duration-300"></i>
+                        <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-teal-500/5"></div>
+                        <i class="fas fa-file-invoice-dollar text-4xl text-emerald-500 dark:text-emerald-400 z-10"></i>
                     </div>
+                    <div class="flex flex-1 flex-col p-6 sm:p-8">
+                        <div class="flex flex-wrap items-center gap-2 mb-4">
+                            <span
+                                class="inline-flex max-w-max items-center rounded-full bg-emerald-50 dark:bg-emerald-500/10 px-2.5 py-0.5 text-xs font-semibold text-emerald-700 dark:text-emerald-400">FinTech
+                                / Compliance</span>
+                            <span
+                                class="inline-flex max-w-max items-center rounded-full bg-amber-50 dark:bg-amber-500/10 px-2.5 py-0.5 text-xs font-semibold text-amber-700 dark:text-amber-400 border border-amber-100 dark:border-amber-500/20">MVP
+                                / Validation</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 tracking-tight">Axiom Fiscal /
+                            EL Fatoora Connector</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-6">
+                            Validation-stage private proof of concept for fiscal compliance middleware in Tunisia's EL
+                            Fatoora context. Invoices are generated upstream; Axiom focuses on ingestion, compliance
+                            validation, artifact generation, submission workflow control, failure diagnostics, and audit
+                            trail continuity.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Upstream
+                                Ingestion</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">CSV
+                                Ingestion</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Compliance
+                                Firewall Layer</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Artifact
+                                Generation (XML/PDF)</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Submission
+                                Workflow Control</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Audit
+                                Trail</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Failed-Invoice
+                                Diagnostics</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Executive
+                                Reporting Layer</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">FastAPI</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">ClickHouse</span>
+                            <span
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">RabbitMQ</span>
+                        </div>
+                        <div class="flex items-center gap-4 pt-4 border-t border-slate-100 dark:border-slate-700 text-sm">
+                            <div class="flex flex-col">
+                                <span class="font-bold text-slate-900 dark:text-white">Status</span>
+                                <span class="text-slate-500 dark:text-slate-400 text-xs mt-0.5">Private MVP PoC</span>
+                            </div>
+                            <div class="w-px h-8 bg-slate-200 dark:bg-slate-700"></div>
+                            <div class="flex flex-col">
+                                <span class="font-bold text-slate-900 dark:text-white">Focus</span>
+                                <span class="text-slate-500 dark:text-slate-400 text-xs mt-0.5">Compliance &amp;
+                                    Auditability</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
+                <article
+                    class="flex flex-col bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm overflow-hidden">
+                    <div
+                        class="relative h-56 w-full bg-slate-50 dark:bg-slate-800/80 p-6 flex flex-col items-center justify-center border-b border-slate-100 dark:border-slate-700">
+                        <div class="absolute inset-4 rounded-xl border-2 border-dashed border-slate-300 dark:border-slate-600">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-br from-teal-500/5 to-blue-500/5"></div>
+                        <i class="fas fa-server text-4xl text-teal-500 dark:text-teal-400 z-10"></i>
+                    </div>
                     <div class="flex flex-1 flex-col p-6 sm:p-8">
                         <span
                             class="inline-flex max-w-max items-center rounded-full bg-teal-50 dark:bg-teal-500/10 px-2.5 py-0.5 text-xs font-semibold text-teal-700 dark:text-teal-400 mb-4">Infrastructure</span>
                         <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 tracking-tight">Banking
                             Infrastructure Modernization</h3>
-                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-6 flex-1">Led the migration of legacy
-                            banking systems to a containerized microservices architecture, improving scalability,
-                            reliability, and deployment efficiency. Implemented Docker-based CI/CD pipelines and
-                            optimized Oracle 19c on Linux environments.</p>
-
-                        <div class="flex flex-wrap gap-2 mb-6">
+                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-6 flex-1">Infrastructure modernization
+                            work across Oracle/Linux banking environments with containerized deployment and CI/CD support
+                            for stable operations.</p>
+                        <div class="flex flex-wrap gap-2">
                             <span
                                 class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Docker</span>
                             <span
-                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Databases</span>
+                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Oracle
+                                19c</span>
                             <span
                                 class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Linux</span>
                             <span
@@ -1328,51 +1164,27 @@
                             <span
                                 class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">High
                                 Availability</span>
-                            <span
-                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Load
-                                Balancing</span>
-                            <span
-                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Security</span>
-                        </div>
-
-                        <div
-                            class="flex items-center gap-4 pt-4 border-t border-slate-100 dark:border-slate-700 text-sm">
-                            <div class="flex flex-col">
-                                <span class="font-bold text-slate-900 dark:text-white">Enterprise</span>
-                                <span class="text-slate-500 dark:text-slate-400 text-xs mt-0.5">FinTech Systems</span>
-                            </div>
-                            <div class="w-px h-8 bg-slate-200 dark:bg-slate-700"></div>
-                            <div class="flex flex-col">
-                                <span class="font-bold text-slate-900 dark:text-white">HA</span>
-                                <span class="text-slate-500 dark:text-slate-400 text-xs mt-0.5">Infrastructure</span>
-                            </div>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <!-- Project 2 -->
-                <div
-                    class="flex flex-col bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover-lift overflow-hidden group">
+                <article
+                    class="flex flex-col bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm overflow-hidden">
                     <div
                         class="relative h-56 w-full bg-slate-50 dark:bg-slate-800/80 p-6 flex flex-col items-center justify-center border-b border-slate-100 dark:border-slate-700">
-                        <div
-                            class="absolute inset-4 rounded-xl border-2 border-dashed border-slate-300 dark:border-slate-600 transition-colors group-hover:border-blue-400">
+                        <div class="absolute inset-4 rounded-xl border-2 border-dashed border-slate-300 dark:border-slate-600">
                         </div>
-                        <div
-                            class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-indigo-500/5 group-hover:from-blue-500/10 group-hover:to-indigo-500/10 transition-colors">
-                        </div>
-                        <i
-                            class="fas fa-shield-alt text-4xl text-blue-500 dark:text-blue-400 z-10 group-hover:scale-110 transition-transform duration-300"></i>
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-indigo-500/5"></div>
+                        <i class="fas fa-shield-alt text-4xl text-blue-500 dark:text-blue-400 z-10"></i>
                     </div>
-
                     <div class="flex flex-1 flex-col p-6 sm:p-8">
                         <span
-                            class="inline-flex max-w-max items-center rounded-full bg-blue-50 dark:bg-blue-500/10 px-2.5 py-0.5 text-xs font-semibold text-blue-700 dark:text-blue-400 mb-4">Full-Stack</span>
+                            class="inline-flex max-w-max items-center rounded-full bg-blue-50 dark:bg-blue-500/10 px-2.5 py-0.5 text-xs font-semibold text-blue-700 dark:text-blue-400 mb-4">Risk
+                            Platform</span>
                         <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 tracking-tight">Risk Management
                             Platform</h3>
-                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-6 flex-1">Built a full-stack risk
-                            analysis platform processing financial data in real-time for proactive risk assessment.</p>
-
+                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-6 flex-1">Backend services for risk and
+                            financial workflows, integrating SQL data pipelines with API and reporting layers.</p>
                         <div class="flex flex-wrap gap-2">
                             <span
                                 class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">FastAPI</span>
@@ -1382,50 +1194,28 @@
                                 class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">SQL
                                 Server</span>
                             <span
-                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Data
-                                Analysis</span>
-                            <span
-                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Business
-                                Intelligence</span>
-                            <span
-                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Financial
-                                Systems</span>
-                            <span
-                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Risk
-                                Management</span>
-                            <span
                                 class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">ClickHouse</span>
-                            <span
-                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">MinIo</span>
                         </div>
                     </div>
-                </div>
-<!-- Project 3: Oracle MAA Assistant -->
-                <div
-                    class="flex flex-col bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover-lift overflow-hidden group">
+                </article>
+
+                <article
+                    class="flex flex-col bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm overflow-hidden">
                     <div
                         class="relative h-56 w-full bg-slate-50 dark:bg-slate-800/80 p-6 flex flex-col items-center justify-center border-b border-slate-100 dark:border-slate-700">
-                        <div
-                            class="absolute inset-4 rounded-xl border-2 border-dashed border-slate-300 dark:border-slate-600 transition-colors group-hover:border-orange-400">
+                        <div class="absolute inset-4 rounded-xl border-2 border-dashed border-slate-300 dark:border-slate-600">
                         </div>
-                        <div
-                            class="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-amber-500/5 group-hover:from-orange-500/10 group-hover:to-amber-500/10 transition-colors">
-                        </div>
-                        <i
-                            class="fas fa-database text-4xl text-orange-500 dark:text-orange-400 z-10 group-hover:scale-110 transition-transform duration-300"></i>
+                        <div class="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-amber-500/5"></div>
+                        <i class="fas fa-database text-4xl text-orange-500 dark:text-orange-400 z-10"></i>
                     </div>
-
                     <div class="flex flex-1 flex-col p-6 sm:p-8">
                         <span
                             class="inline-flex max-w-max items-center rounded-full bg-orange-50 dark:bg-orange-500/10 px-2.5 py-0.5 text-xs font-semibold text-orange-700 dark:text-orange-400 mb-4">Oracle
                             / HA</span>
                         <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 tracking-tight">Oracle MAA
                             Assistant</h3>
-                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-6 flex-1">AI-powered Oracle
-                            High-Availability & Migration planner. Describe your Oracle environment and instantly
-                            receive a tailored MAA configuration plan — Data Guard, RAC, RMAN & more — exported to
-                            PDF in seconds.</p>
-
+                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-6 flex-1">Tooling project to support
+                            Oracle high-availability planning and migration preparation for infrastructure teams.</p>
                         <div class="flex flex-wrap gap-2 mb-6">
                             <span
                                 class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Oracle
@@ -1437,118 +1227,72 @@
                                 class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">RAC</span>
                             <span
                                 class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">RMAN</span>
-                            <span
-                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Next.js</span>
-                            <span
-                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">PDF
-                                Export</span>
-                            <span
-                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">High
-                                Availability</span>
                         </div>
-
-      <div class="flex items-center gap-4 pt-4 border-t border-slate-100 dark:border-slate-700">
-        <a href="https://oracle-maa-assistant.vercel.app/" target="_blank"
-          class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500 hover:bg-orange-600 text-white text-xs font-semibold transition-colors shadow-sm">
-          <i class="fas fa-external-link-alt"></i>
-          Live Demo
-        </a>
-        <span class="text-xs text-slate-400 dark:text-slate-500">Deployed on Vercel</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 4: Fisc Shield TTN E-Invoicing -->
-  <div
-    class="flex flex-col bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover-lift overflow-hidden group">
-    <div
-      class="relative h-56 w-full bg-slate-50 dark:bg-slate-800/80 p-6 flex flex-col items-center justify-center border-b border-slate-100 dark:border-slate-700">
-      <div
-        class="absolute inset-4 rounded-xl border-2 border-dashed border-slate-300 dark:border-slate-600 transition-colors group-hover:border-emerald-400">
-      </div>
-      <div
-        class="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-teal-500/5 group-hover:from-emerald-500/10 group-hover:to-teal-500/10 transition-colors">
-      </div>
-      <i
-        class="fas fa-file-invoice-dollar text-4xl text-emerald-500 dark:text-emerald-400 z-10 group-hover:scale-110 transition-transform duration-300"></i>
-    </div>
-
-    <div class="flex flex-1 flex-col p-6 sm:p-8">
-      <span
-        class="inline-flex max-w-max items-center rounded-full bg-emerald-50 dark:bg-emerald-500/10 px-2.5 py-0.5 text-xs font-semibold text-emerald-700 dark:text-emerald-400 mb-4">FinTech / Compliance</span>
-      <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 tracking-tight">Fisc Shield: TTN
-        E-Invoicing</h3>
-      <p class="text-sm text-slate-600 dark:text-slate-400 mb-6 flex-1">Cloud-native microservices platform bridging
-        legacy ERPs with Tunisia's El Fatoora (TTN). Features the "Fisc Shield" engine for real-time tax validation,
-        asynchronous TEIF 2.0 XML/PDF generation, and ClickHouse-powered CFO analytics.</p>
-
-      <div class="flex flex-wrap gap-2 mb-6">
-        <span
-          class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Next.js</span>
-        <span
-          class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">FastAPI</span>
-        <span
-          class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">RabbitMQ</span>
-        <span
-          class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">ClickHouse</span>
-        <span
-          class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">MinIO</span>
-        <span
-          class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">XML/XAdES</span>
-      </div>
-
-      <div class="flex items-center gap-4 pt-4 border-t border-slate-100 dark:border-slate-700">
-        <div class="flex flex-col">
-                                <span class="font-bold text-slate-900 dark:text-white">Enterprise</span>
-                                <span class="text-slate-500 dark:text-slate-400 text-xs mt-0.5">FinTech Systems</span>
-                            </div>
-                            <div class="w-px h-8 bg-slate-200 dark:bg-slate-700"></div>
-                            <div class="flex flex-col">
-                                <span class="font-bold text-slate-900 dark:text-white">Microservices</span>
-                                <span class="text-slate-500 dark:text-slate-400 text-xs mt-0.5">Architecture</span>
-                            </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 5-->
-                <div
-                    class="flex flex-col bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover-lift overflow-hidden group">
-                    <div
-                        class="relative h-56 w-full bg-slate-50 dark:bg-slate-800/80 p-6 flex flex-col items-center justify-center border-b border-slate-100 dark:border-slate-700">
-                        <div
-                            class="absolute inset-4 rounded-xl border-2 border-dashed border-slate-300 dark:border-slate-600 transition-colors group-hover:border-purple-400">
-                        </div>
-                        <div
-                            class="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-pink-500/5 group-hover:from-purple-500/10 group-hover:to-pink-500/10 transition-colors">
-                        </div>
-                        <i
-                            class="fas fa-brain text-4xl text-purple-500 dark:text-purple-400 z-10 group-hover:scale-110 transition-transform duration-300"></i>
+                        <a href="https://oracle-maa-assistant.vercel.app/" target="_blank"
+                            class="inline-flex items-center gap-2 text-sm font-semibold text-orange-600 dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 transition-colors">
+                            <i class="fas fa-external-link-alt text-xs"></i> Live Demo
+                        </a>
                     </div>
+                </article>
+            </div>
 
-                    <div class="flex flex-1 flex-col p-6 sm:p-8">
-                        <span
-                            class="inline-flex max-w-max items-center rounded-full bg-purple-50 dark:bg-purple-500/10 px-2.5 py-0.5 text-xs font-semibold text-purple-700 dark:text-purple-400 mb-4">AI/ML</span>
-                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 tracking-tight">Object
-                            Detection System</h3>
-                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-6 flex-1">Developed a hybrid deep
-                            learning model for real-time object detection with optimized inference performance.</p>
+            <div class="mt-12 rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/50 p-6 sm:p-8">
+                <div class="flex flex-wrap items-center gap-3 mb-4">
+                    <span
+                        class="inline-flex items-center rounded-full bg-emerald-50 dark:bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-700 dark:text-emerald-400">Case
+                        Study</span>
+                    <span
+                        class="inline-flex items-center rounded-full bg-amber-50 dark:bg-amber-500/10 px-3 py-1 text-xs font-semibold text-amber-700 dark:text-amber-400 border border-amber-100 dark:border-amber-500/20">MVP
+                        / Validation Phase</span>
+                </div>
+                <h3 class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white mb-2">Axiom Fiscal / EL
+                    Fatoora Connector</h3>
+                <p class="text-sm sm:text-base text-slate-600 dark:text-slate-400 mb-8">Validation-stage middleware
+                    architecture for fiscal compliance workflows in Tunisia's e-invoicing landscape.</p>
 
-                        <div class="flex flex-wrap gap-2">
-                            <span
-                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">Python</span>
-                            <span
-                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">PyTorch</span>
-                            <span
-                                class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300">OpenCV</span>
-                        </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+                    <div>
+                        <h4 class="text-sm font-semibold text-slate-900 dark:text-white mb-2">Problem</h4>
+                        <p class="text-slate-600 dark:text-slate-400">Organizations with legacy upstream systems need a
+                            controlled way to satisfy fiscal compliance requirements without destabilizing core financial
+                            operations.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-slate-900 dark:text-white mb-2">Solution</h4>
+                        <p class="text-slate-600 dark:text-slate-400">Designed a middleware layer that receives upstream
+                            invoice data, enforces compliance rules, and manages submission-state control points.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-slate-900 dark:text-white mb-2">Architecture</h4>
+                        <p class="text-slate-600 dark:text-slate-400">Upstream ingestion adapters, validation engine,
+                            artifact generation services, asynchronous submission workflow, failure queue, and persistent
+                            audit trail store.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-slate-900 dark:text-white mb-2">Key Features</h4>
+                        <p class="text-slate-600 dark:text-slate-400">CSV ingestion, rule-based validation, compliance
+                            artifact generation, submission tracking, failed-invoice diagnostics, and traceable invoice
+                            lifecycle history.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-slate-900 dark:text-white mb-2">Current Status</h4>
+                        <p class="text-slate-600 dark:text-slate-400">Private proof of concept in active MVP build.
+                            Core workflow orchestration and rule behavior are being validated; production deployment has
+                            not started.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-slate-900 dark:text-white mb-2">My Role</h4>
+                        <p class="text-slate-600 dark:text-slate-400">Product and system architecture, backend workflow
+                            design, integration boundary definition, and compliance-control implementation.</p>
+                    </div>
+                    <div class="md:col-span-2">
+                        <h4 class="text-sm font-semibold text-slate-900 dark:text-white mb-2">Why It Matters</h4>
+                        <p class="text-slate-600 dark:text-slate-400">Compliance workflows require traceability, clear
+                            failure handling, and operational discipline. This project demonstrates that engineering focus
+                            in a validation-stage environment.</p>
                     </div>
                 </div>
-
-                
-            </div><!-- end desktop cards -->
-
+            </div>
         </div>
     </section>
 
@@ -1635,11 +1379,10 @@
                 <div>
                     <span class="text-base font-semibold leading-7 text-teal-600 dark:text-teal-400">Get In Touch</span>
                     <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl mb-6">
-                        Let's Work Together</h2>
+                        Let's Build Trusted Financial Systems</h2>
                     <p class="text-lg leading-8 text-slate-600 dark:text-slate-400 mb-10">
-                        Open to consulting opportunities, collaborative projects, and roles in FinTech,
-                        DevOps, or infrastructure engineering. Let's discuss how I can contribute to your next
-                        initiative.
+                        Open to engineering roles and collaborations focused on fintech infrastructure, compliance
+                        middleware, and enterprise backend systems. Available for remote and international work.
                     </p>
 
                     <div class="space-y-6">
@@ -1718,7 +1461,7 @@
                                     class="text-slate-500">:</span><span class="text-blue-400">~</span><span
                                     class="text-slate-500">$</span> <span class="text-yellow-300">echo</span> "Let's
                                 connect!"<br>
-                                <span class="text-slate-100">Open for opportunities</span>
+                                <span class="text-slate-100">Open for enterprise fintech roles</span>
                             </div>
                             <div class="mb-4">
                                 <span class="text-teal-400">farhat@portfolio</span><span
